@@ -1,0 +1,62 @@
+<div class="contain-to-grid show-for-large-up clearfix">
+  <div class="menu top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="<$mt:BlogRelativeURL$>"><$mt:BlogName encode_html="1"$></a></h1></li>
+      <li class="toggle-topbar menu-icon">
+        <a href="">Menu</a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="<$mt:BlogRelativeURL$>">ホーム</a></li>
+        <li class="has-dropdown">
+          <a data-dropdown="drop-news" aria-controls="drop-news" aria-expanded="false">ニュース</a>
+          <ul id="drop-news" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><a href="<$mt:BlogRelativeURL$>news.html">トップ</a></li>
+            <mt:Categories>
+            <mt:SetVarBlock name="category_count"><$mt:CategoryCount$></mt:SetVarBlock>
+            <mt:If name="category_count" ne="0">
+            <li><a href="<$mt:CategoryArchiveLink$>"><$mt:CategoryLabel encode_html="1"$></a></li>
+            </mt:If>
+            </mt:Categories>
+          </ul>
+        </li>
+    <mt:TopLevelFolders>
+        <li class="has-dropdown">
+          <a data-dropdown="menu-<$mt:FolderBasename$>" aria-controls="menu-<$mt:FolderBasename$>" aria-expanded="false"><$mt:FolderLabel encode_html="1"$></a>
+          <ul id="menu-<$mt:FolderBasename$>" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <mt:Pages sort_order="ascend" field:footer_menu="0">
+            <li><a href="<$mt:PagePermalink$>"><$mt:PageTitle encode_html="1"$></a></li>
+          </mt:Pages>
+          <mt:SubFolders>
+          <li>
+          <ul id="menu-<$mt:FolderBasename$>" class="folder-open" tabindex="-1">
+          <li class="folder-label"><$mt:FolderLabel encode_html="1"$> <i class="fa fa-caret-down fa-sm"></i></li>
+          <mt:Pages sort_order="ascend" field:footer_menu="0">
+            <li><a href="<$mt:PagePermalink$>" class="page-link"><$mt:PageTitle encode_html="1"$></a></li>
+          </mt:Pages>
+          </ul>
+          </li>
+          <$mt:SubFolderRecurse$>
+          </mt:SubFolders>
+          </ul>
+        </li>
+    </mt:TopLevelFolders>
+        <mt:Pages no_folder="1" sort_order="ascend" field:footer_menu="0">
+        <li><a href="<$mt:PagePermalink$>"><$mt:PageTitle encode_html="1"$></a></li>
+        </mt:Pages>
+    </ul>
+    </section>
+  </div>
+</div>
+
+<div class="toggle-button hide-for-large-up sp-menu" style="background-color:<$mt:GetVar name="main_color"$>;">
+  <a class="left-off-canvas-toggle menu-icon">
+  <span></span>
+  </a>
+  <section class="middle tab-bar-section">
+    <h1 class="title"><a href="<$mt:BlogRelativeURL$>"><$mt:BlogName encode_html="1"$></a></h1>
+  </section>
+</div>

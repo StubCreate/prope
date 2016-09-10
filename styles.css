@@ -1,0 +1,548 @@
+<$mt:Include module="config"$>
+
+@charset "UTF-8";
+
+@-ms-viewport {
+width: device-width;}
+
+body {
+    font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+.row, .contain-to-grid .top-bar {
+    max-width: 1200px;
+}
+a {
+    color: rgb(51,51,51);
+}
+a:hover, a:focus {
+    color: rgb(102,102,102);
+}
+
+/* トップバー */
+.contain-to-grid, .menu, .top-bar-section li:not(.has-form) a:not(.button),
+.top-bar-section ul, .top-bar.expanded .title-area {
+    background-color: <$mt:GetVar name="main_color"$>;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: rgb(102,102,102);
+}
+.top-bar-section ul li>a {
+    font-size: 1rem;
+    color: <$mt:GetVar name="main_text_color"$>;
+}
+.top-bar-section ul li>a:hover , a:focus{
+    color: <$mt:GetVar name="main_text_color"$>;
+}
+.top-bar-section .f-dropdown li {
+    width: 200px;
+}
+.top-bar .name h1 {
+    font-size: 1.4rem;
+}
+.top-bar .name h1 a{
+    color: #100D51;
+}
+.folder-open .folder-label{
+    line-height: 35px;
+    background-color: rgb(238,238,238);
+    padding-left: 15px;
+}
+.folder-open .page-link{
+    padding-left: 25px!important;
+}
+.f-dropdown li.sub-folder:hover, .f-dropdown li.folder-label:hover{
+    background: none;
+}
+.bread-open {
+    margin-left: 0.5rem;
+}
+.bread-open li{
+    list-style-type: none;
+    text-transform: none;
+}
+
+
+
+/* ヘッダー */
+.header {
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
+}
+.header h1 a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+.header p {
+    margin: 8px 0 0 0;
+    font-size: 12px;
+    line-height: 1;
+}
+.header .logo {
+    border: none;
+    vertical-align: bottom;
+}
+.sp-menu a{
+    color: <$mt:GetVar name="main_text_color"$>;
+}
+.hide-for-large-up h1 {
+    color: rgb(255,255,255);
+    font-size: 1.4rem;
+    line-height: 45px;
+    margin: 0;
+}
+.hide-for-large-up a:hover,a:focus {
+    color: rgb(255,255,255);
+    background-color: rgb(127,127,127);
+}
+
+/*トップメインイメージ部分 */
+.slider1 {
+  margin: 0 0 50px;
+}
+.slider1 h3 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1;
+}
+.slider1 h3 a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+
+.slider1 p {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* 枠の設定 */
+.slider1 .inner {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+/* パーツを重ねる設定 */
+.slider1 {
+    position: relative;
+}
+.slider1 .inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.orbit-container {
+    margin-bottom: 10px
+}
+#mainvisual {
+    margin-bottom: 25px;
+}
+
+
+/* 下層ページバナー */
+.page-banner {
+    background-color: rgb(223,227,232);
+    background-image: url("<$mt:BlogURL encode_html="1"$>images/slide01.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 140px;
+}
+.page-banner h2 {
+    font-size: 2.2em;
+}
+.page-banner .inner {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 44px;
+    height: 140px;
+}
+
+/* 下層ページ */
+.breadcrumbs {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0.75rem 0.875rem;
+}
+ul.breadcrumbs {
+    margin-bottom: 0;
+}
+.breadcrumbs > * a, .breadcrumbs > * span {
+    color: #333333;
+    font-size: 0.75rem;
+    text-transform: none;
+}
+.entry-meta {
+    margin-bottom: 10px;
+}
+.page-title {
+    font-size: 1.5rem;
+}
+.sidebar ul{
+    margin-left: 0;
+    list-style-type: none;
+}
+.sidebar li{
+    padding: 5px;
+}
+.page-select {
+    background-color: rgb(238,238,238);
+}
+
+/* ページ送り */
+.page-navigation {
+    text-align: center;
+}
+.page-navigation ul {
+    display: block;
+    padding-bottom: 10px;
+}
+.page-navigation li {
+    display: inline-block;
+    border-bottom: none;
+    list-style: none;
+}
+.page-navigation li a {
+    padding: 0 10px;
+}
+.page-navigation li a[rel="prev"]::before {
+    content: "«";
+    margin-right: 0.3em;
+}
+
+.page-navigation li a[rel="next"]::after {
+    content: "»";
+    margin-left: 0.3em;
+}
+
+/* グループ */
+.group {
+    margin-bottom: 30px;
+    padding: 0;
+}
+.group > h2 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+/* 罫線で区切る設定 */
+.group > h2 {
+    padding: 0 0 0 5px;
+    /*border-left: solid 5px <$mt:GetVar name="main_color"$>;*/
+}
+
+/* 左サイドメニュー */
+.sidemenu {
+    margin-bottom: 10px;
+    padding: 0 0 1px 0;
+    background-color: <$mt:GetVar name="sub_color"$>;
+}
+.sidemenu h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: <$mt:GetVar name="sub_color"$>;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.sidemenu ul, .sidemenu ol {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    list-style: none;
+}
+.sidemenu li a {
+    display: block;
+    padding: 8px 5px 8px 5px;
+    color: #000;
+    text-decoration: none;
+}
+.sidemenu li a:hover {
+    background-color: rgb(255,255,238);;
+}
+.sidemenu > p {
+    margin: 10px;
+}
+
+
+/* ピックアップ */
+.entry {
+    margin-bottom: 10px;
+    padding: 20px 20px 10px 20px;
+    background-color: <$mt:GetVar name="sub_color"$>;
+}
+.entry img {
+    float: left;
+    max-width: 30%;
+    height: auto;
+    margin: 0;
+    vertical-align: bottom;
+}
+.entry h3 {
+    margin: 0 0 10px 33%;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.entry p {
+    margin: 0 0 10px 33%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.entry:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.entry {
+    *zoom: 1;
+}
+
+/* 罫線で区切る設定 */
+.entry h3 {
+    padding: 0 0 10px 0;
+    border-bottom: solid 1px <$mt:GetVar name="main_color"$>;
+}
+
+/* ボタン */
+.button {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 25px 10px 25px;
+    background-color: <$mt:GetVar name="main_color"$>;
+    color: <$mt:GetVar name="main_text_color"$>;
+    font-size: 16px;
+    text-decoration: none;
+}
+.button:hover, .button:focus {
+    outline: none;
+    background-color: rgb(102,102,102);
+}
+.news-list {
+    margin-top: 7px;
+    font-size: 0.85em;
+}
+
+/* ニュース */
+.news {
+    padding: 20px;
+    background-color: rgb(223,227,232);
+}
+
+.news h1 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.news ul, .news ol {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    list-style: none;
+}
+.news li a {
+    display: block;
+    padding: 10px 5px 10px 5px;
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+.news li a:hover {
+    background-color: rgb(255,255,238);
+}
+.news time {
+    float: left;
+    border: none;
+    line-height: 1.8;
+}
+.news p {
+    margin: 0 0 0 110px;
+}
+.news .desc {
+    color: rgb(102,102,102);
+    font-size: 12px;
+}
+.news li a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.news li a {
+    *zoom: 1;
+}
+
+/* 枠の設定 */
+.news {
+    padding: 18px;
+    border: solid 2px <$mt:GetVar name="sub_color"$>;
+    background-color: rgb(255,255,255);
+}
+
+/* インフォメーション */
+.information {
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    background-color: rgb(173,216,230);
+}
+.information i {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+    color: rgb(66,33,11);
+    line-height: 1.2;
+}
+.information p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ボタン */
+.information .button {
+    background-color: rgb(115,171,18);
+}
+.information .button:hover, .information .button:focus {
+    background-color: rgb(51,102,34);
+}
+
+/* フッター */
+.footer {
+    padding: 20px;
+    background-color: rgb(68,68,68);
+    color: rgb(255,255,255);
+}
+.footer p {
+    margin: 0 0 3px 0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.footer a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+.footer-menu{
+    display: inline;
+}
+.footer-menu li{
+    float: left;
+    list-style-type: none;
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+.footer-submenu li{
+    clear: both;
+}
+
+/* オフキャンバスメニュー */
+.cmenu {
+    padding: 20px;
+    background-color: rgb(223,227,232);
+}
+.cmenu h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.cmenu ul, .cmenu ol {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    list-style: none;
+}
+.cmenu li a {
+    display: block;
+    padding: 8px 5px 8px 5px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+.cmenu li a:hover {
+    background-color: rgb(86,86,86);
+}
+.cmenu .submenu {
+    background-color: rgb(68,68,68);
+    padding-left: 10px;
+}
+.cmenu .dropdown {
+    padding-left: 10px;
+}
+.cmenu .dropdown {
+    color: rgb(255,255,255);
+    display: block;
+    padding: 8px 5px;
+    text-decoration: none;
+}
+
+/* 枠＋見出しの設定 */
+.cmenu {
+    margin-bottom: 0;
+    padding: 0 0 1px 0;
+    background-color: rgb(51,51,51);
+}
+.cmenu > h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: <$mt:GetVar name="main_color"$>;
+    color: <$mt:GetVar name="main_text_color"$>;
+    font-size: 14px;
+}
+.cmenu > p {
+    margin: 10px;
+}
+.cmenu li a {
+    padding-left: 10px;
+}
+
+@media(max-width:640px) {
+.page-banner {
+    height: 120px;
+}
+.page-banner h2 {
+    font-size: 1.8em;
+}
+.page-banner .inner {
+    height: 120px;
+    padding: 40px 10px;
+}
+}
+
+/* ------------------------------------------
+                LAYOUT
+------------------------------------------ */
+/*Qupon*/
+h2.font {
+  font-size: 1em;
+}
+
+div.center-item  {
+	right: 20px;
+	z-index: 99;
+}
+
+div.center-item {
+  left: 15px;
+	z-index: 100;
+}
+
+table.menu {
+  width: 100%;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  margin-bottom: 1.25rem;
+}
+
+
+/*フォーム*/
+span.re_reserve {
+  color: rgba(255, 41, 111, 0.64);
+
+}
