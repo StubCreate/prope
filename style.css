@@ -2472,7 +2472,7 @@ object {
   width: 16px;
   height: 16px;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1;
   font-family: 'Genericons';
   text-decoration: inherit;
@@ -2885,16 +2885,12 @@ pre {
 
 .site-address {
   text-align: right;
-  padding-top: 10px;
   font-size: 0.875em;
 }
 
 #site-navigation {
-  -webkit-box-shadow: 3px 1px 0 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 1px 0 0 rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
-  background-color: #fff;
   margin: 10px 0 20px 10px;
 }
 
@@ -3127,10 +3123,26 @@ ul.postList li {
 }
 
 @media screen and (max-width: 768px) {
+  #site-navigation {
+    position: relative;
+    z-index: 1;
+    margin: 10px 0 20px 10px;
+  }
+
+  .navigation-main {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    position: absolute;
+    top:-460px;
+  }
 
 　.menu-toggle .genericon-menu {
  　 margin-top: 5px;
  　 font-size: 0.725em;
+    position: absolute;
+    top:-200px;
 　}
 
 
@@ -3144,12 +3156,38 @@ ul.postList li {
   }
 
   #site-navigation {
-    background-color: #33201f;
+
   }
   #site-navigation .genericon-menu {
-    color: #FFF;
+    color: #666c67;
   }
 }
+
+@media screen and (max-width: 468px) {
+  .navigation-main {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    position: absolute;
+    top:-360px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .navigation-main {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    position: absolute;
+    top:-320px;
+  }
+
+}
+
+
 .front-feature {
   margin-top: 120px;
 }
@@ -3728,6 +3766,66 @@ ul#page_link_menu li a {
 
 /* Layout
 --------------------------------------------- */
+ul.snslogo {
+  float: right;
+  display: flex;
+  line-height: 40px;
+  padding: 1%;
+  flex-direction: row;
+}
+
+span.gene {
+  margin-top: 9px;
+  margin-right: 1%;
+
+}
+
+ul.snslogo li.cont_shop {
+  width: 340px;
+  list-style: none;
+  margin-top: 5px;
+}
+
+ul.snslogo li.facebook {
+  width: 30px;
+  padding: 1%;
+  list-style: none;
+}
+
+ul.snslogo li.insta {
+  width: 30px;
+  padding: 1%;
+  list-style: none;
+}
+
+/*ul.snslogo li img {
+  height: 50%;
+}*/
+
+
+
+
+
+h1.site-logo {
+  margin-top: 30px;
+}
+
 h1.site-logo img.logo {
-  width: 60%;
+  width: 70%;
+}
+
+
+
+
+/*Access*/
+.simplemap {
+    max-width: none;
+}
+
+/*Form*/
+.form-width { max-width: 100%;}
+
+span.contact {
+  color: #e95464;
+  margin-top: 5px;
 }

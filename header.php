@@ -33,15 +33,27 @@
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="row">
-				<div class="site-branding large-7 columns">
+				<div class="site-branding large-5 columns">
 					<h1 class="site-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo00.png" alt="プロペラヘアー" />
 						</a>
 					</h1>
 				</div>
-				<div class="site-address large-5 columns">
-					<div class="genericon genericon-phone"></div>並木店: <a href="tel:082-544-3511">082-544-3511</a>&nbsp;段原店: <a href="tel:082-506-1941">082-506-1941</a>
+				<div class="site-address large-7 columns">
+					<ul class="snslogo">
+					<li class="cont_shop">
+						<span class="genericon genericon-phone gene"></span>
+					並木店: <a href="tel:082-544-3511">082-544-3511</a>
+					&nbsp;段原店: <a href="tel:082-506-1941">082-506-1941</a>
+				</li>
+				<li class="facebook"><a href="https://www.facebook.com/PROPELLERHAIR" target="_blank">
+					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.png" alt="Facebook" />
+				</a></li>
+				<li class="insta"><a href="https://www.instagram.com/propeller_hair/" target="_blank">
+					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/insta_logo.png" alt="Instagram" />
+				</a></li>
+			</ul>
 				</div>
 			</div>
 			<?php if ( is_home() || is_front_page() ) : ?>
@@ -49,7 +61,7 @@
 							<div class="slider1">
 							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="トップイメージ01" /></div>
 							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="トップイメージ02" /></div>
-							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide03.png" alt="トップイメージ03" /></div>
+							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.png" alt="トップイメージ03" /></div>
 							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="トップイメージ04" /></div>
 							</div>
 						</div>
