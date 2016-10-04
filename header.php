@@ -33,20 +33,22 @@
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="row">
-				<div class="site-branding large-5 columns">
+				<div class="site-branding large-7 small-5 small-centered large-uncentered columns">
 					<h1 class="site-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo00.png" alt="プロペラヘアー" />
 						</a>
 					</h1>
 				</div>
-				<div class="site-address large-7 columns">
-					<ul class="snslogo">
+				<div class="site-address large-5 small-7 small-centered large-uncentered columns">
+					<ul class="head_contact">
 					<li class="cont_shop">
 						<span class="genericon genericon-phone gene"></span>
 					並木店: <a href="tel:082-544-3511">082-544-3511</a>
 					&nbsp;段原店: <a href="tel:082-506-1941">082-506-1941</a>
 				</li>
+			</ul>
+			<ul class="snslogo">
 				<li class="facebook"><a href="https://www.facebook.com/PROPELLERHAIR" target="_blank">
 					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.png" alt="Facebook" />
 				</a></li>

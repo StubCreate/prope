@@ -2848,7 +2848,7 @@ body {
 }
 
 a {
-  color: #5F2F08;
+  color: #555;
 }
 
 a:hover {
@@ -2899,7 +2899,7 @@ pre {
 }
 
 #secondary {
-  background-color: #E0D5B8;
+  background-color: #f8f4e6;
   padding-top: 20px;
 }
 
@@ -2968,6 +2968,7 @@ li.comment {
   -webkit-box-shadow: 0 1px 0 #eae2cc;
   -moz-box-shadow: 0 1px 0 #eae2cc;
   box-shadow: 0 1px 0 #eae2cc;
+  font-size: 0.9em;
 }
 
 .site-footer {
@@ -3070,7 +3071,7 @@ ul.postList li {
 }
 
 .navigation-main li:hover > a {
-  border-bottom: 1px solid #192f60;
+  border-bottom: 2px solid #003f8e;
 }
 
 .navigation-main ul ul :hover > a {
@@ -3124,9 +3125,11 @@ ul.postList li {
 
 @media screen and (max-width: 768px) {
   #site-navigation {
-    position: relative;
+    position: absolute;;
     z-index: 1;
-    margin: 10px 0 20px 10px;
+    margin: 10px 0 20px 0px;
+    top:-10px;
+    width: 100%;
   }
 
   .navigation-main {
@@ -3163,27 +3166,35 @@ ul.postList li {
   }
 }
 
-@media screen and (max-width: 468px) {
-  .navigation-main {
+@media screen and (max-width: 600px) {
+  /*.navigation-main {
     clear: both;
     display: block;
     float: left;
     width: 100%;
     position: absolute;
     top:-360px;
+  }*/
+
+  #site-navigation {
+    position: absolute;;
+    z-index: 1;
+    margin: 10px 0 20px 0px;
+    top:-50px;
+    width: 100%;
   }
 
 }
 
 @media screen and (max-width: 360px) {
-  .navigation-main {
+  /*.navigation-main {
     clear: both;
     display: block;
     float: left;
     width: 100%;
     position: absolute;
     top:-320px;
-  }
+  }*/
 
 }
 
@@ -3250,22 +3261,18 @@ ul.postList li {
 }
 
 h1.entry-title {
-  color: #5F2F08;
-  background-color: #E0D5B8;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  color: #003f8e;
   font-weight: bold;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 8px 15px 5px;
+  padding: 5px 0px;
 }
 
 .entry-content h2 {
-  border-left: 4px solid #5F2F08;
-  padding: 5px 0 5px 10px;
+  border-left: 7px solid #003f8e;
+  padding-left: 10px;
 }
 
 .entry-content h3 {
-  border-bottom: 1px dashed #5F2F08;
+  border-bottom: 1px dashed #003f8e;
   padding-bottom: 10px 0 5px 0;
 }
 
@@ -3362,12 +3369,9 @@ ul#page_link_menu {
 }
 
 .staff h1 {
-  color: #5F2F08;
-  background-color: #E0D5B8;
-  border-radius: 5px;
+  color: #003f8e;
   font-weight: bold;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 8px 15px 5px;
+  padding: 5px 0px;
 }
 
 .staff .entry-content {
@@ -3400,7 +3404,7 @@ ul#page_link_menu {
 }
 
 .staff .entry-content .staffCate a {
-  background-color: #E0D5B8;
+  background-color: #f8f4e6;
   border-radius: 3px;
   padding: 2px 10px;
 }
@@ -3619,6 +3623,9 @@ ul#page_link_menu li a {
   .site-address {
     text-align: center;
     padding-top: 0;
+    z-index: 1;
+    position: absolute;
+    top:-20px;
   }
 
   .front-news .small-3 {
@@ -3766,54 +3773,104 @@ ul#page_link_menu li a {
 
 /* Layout
 --------------------------------------------- */
-ul.snslogo {
+ul.head_contact {
   float: right;
   display: flex;
-  line-height: 40px;
-  padding: 1%;
+  line-height: 20px;
   flex-direction: row;
 }
 
 span.gene {
-  margin-top: 9px;
   margin-right: 1%;
-
 }
 
-ul.snslogo li.cont_shop {
+ul.head_contact li.cont_shop {
   width: 340px;
   list-style: none;
   margin-top: 5px;
 }
 
+ul.snslogo {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: 50px;
+}
+
 ul.snslogo li.facebook {
-  width: 30px;
-  padding: 1%;
+  width: 20px;
   list-style: none;
+  margin-left: 10px;
 }
 
 ul.snslogo li.insta {
-  width: 30px;
-  padding: 1%;
+  width: 20px;
   list-style: none;
+  margin-left: 10px;
 }
 
-/*ul.snslogo li img {
-  height: 50%;
-}*/
-
-
-
-
+li.cont_shop br.area_info {
+  display: none;
+}
 
 h1.site-logo {
   margin-top: 30px;
 }
 
 h1.site-logo img.logo {
-  width: 70%;
+  width: 60%;
 }
 
+.list_news {
+  border: 1px ridge rgb(134, 134, 134);
+  padding: 2%;
+  margin: 10px 10px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1.site-logo {
+    margin-top: 0px;
+  }
+
+  h1.site-logo img.logo {
+    width: 80%;
+  }
+
+  ul.head_contact {
+    float: none;
+    display: flex;
+    line-height: 20px;
+    flex-direction: row;
+  }
+
+  ul.head_contact li.cont_shop {
+    width: 340px;
+    list-style: none;
+    margin-top: 5px;
+  }
+
+  ul.snslogo {
+    display: none;
+  }
+
+  ul.snslogo li.facebook {
+    display: none;
+  }
+
+  ul.snslogo li.insta {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1.site-logo img.logo {
+    width: 120%;
+  }
+
+}
 
 
 
