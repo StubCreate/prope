@@ -19,6 +19,7 @@
 	<script type="text/javascript"src="//webfonts.sakura.ne.jp/js/sakura.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css"/>
+	<script type="text/javascript"src="//webfonts.sakura.ne.jp/js/sakura.js"></script>
 
 	<?php wp_head(); ?>
 	<!--[if lt IE 9]>
@@ -41,33 +42,19 @@
 					</h1>
 				</div>
 				<div class="site-address large-5 small-7 small-centered large-uncentered columns">
-					<ul class="head_contact">
-					<li class="cont_shop">
-						<span class="genericon genericon-phone gene"></span>
-					並木店: <a href="tel:082-544-3511">082-544-3511</a>
-					&nbsp;段原店: <a href="tel:082-506-1941">082-506-1941</a>
-				</li>
-			</ul>
 			<ul class="snslogo">
+				<li class="cont_shop">
+					<span class="genericon genericon-phone gene"></span>
+			</li>
 				<li class="facebook"><a href="https://www.facebook.com/PROPELLERHAIR" target="_blank">
-					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.png" alt="Facebook" />
+					<img class="btn_fb" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.png" alt="Facebook" />
 				</a></li>
 				<li class="insta"><a href="https://www.instagram.com/propeller_hair/" target="_blank">
-					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/insta_logo.png" alt="Instagram" />
+					<img class="btn_insta" src="<?php echo get_template_directory_uri(); ?>/assets/img/insta_logo.png" alt="Instagram" />
 				</a></li>
 			</ul>
 				</div>
 			</div>
-			<?php if ( is_home() || is_front_page() ) : ?>
-						<div id="main-img">
-							<div class="slider1">
-							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="トップイメージ01" /></div>
-							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="トップイメージ02" /></div>
-							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.png" alt="トップイメージ03" /></div>
-							<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="トップイメージ04" /></div>
-							</div>
-						</div>
-			<?php endif; ?>
 			<nav id="site-navigation" class="navigation-main" role="navigation">
 				<h1 class="menu-toggle text-right">
 					<div class="genericon genericon-menu"></div>
@@ -81,6 +68,16 @@
 			<!-- #site-navigation -->
 		</header>
 		<!-- #masthead -->
+		<?php if ( is_home() || is_front_page() ) : ?>
+					<div id="main-img">
+						<div class="slider1">
+						<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="トップイメージ01" /></div>
+						<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="トップイメージ02" /></div>
+						<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.png" alt="トップイメージ03" /></div>
+						<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="トップイメージ04" /></div>
+						</div>
+					</div>
+		<?php endif; ?>
 
 <?php if ( ! is_front_page() ) : ?>
 		<div id="main" class="site-main row">

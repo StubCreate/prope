@@ -238,7 +238,7 @@ function add_comment_close( $open, $post_id ) {
 }
 add_filter( 'comments_open', 'add_comment_close', 10, 2 );
 
-/*アクセス制限*/
+//アクセス制限
 
 function require_login() {
     if ( ! is_user_logged_in() && ! preg_match( '/^(wp-login\.php|async-upload\.php)/', basename( $_SERVER['REQUEST_URI'] ) ) && ! ( defined( 'DOING_AJAX' ) && DOING_AJAX )  && ! ( defined( 'DOING_CRON' ) && DOING_CRON ) ) {
@@ -247,7 +247,7 @@ function require_login() {
 }
 add_action( 'init', 'require_login' );
 
-/*News*/
+//News
 function custom_excerpt_length( $length ) {
      return 20;
 }
@@ -261,3 +261,9 @@ add_filter('excerpt_more', 'my_excerpt_more');
 
 //フォームUI
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
+
+//Web font
+function my_scripts() {
+    wp_enqueue_style( 'google-webfont-style', '//fonts.googleapis.com/css?family=Shadows+Into+Light' );
+}
+add_action( 'wp_enqueue_scripts', 'my_scripts' );

@@ -5,7 +5,7 @@
 get_header(); ?>
 <div class="row">
 	<div class="large-5 small-12 colums left">
-		<h3>News</h3>
+		<h3 class="field_tit">NEWS</h3>
 		<dl class="list_news">
 		<?php
 		   $newslist = get_posts( array(
@@ -16,8 +16,15 @@ get_header(); ?>
 		    setup_postdata( $post );
 		?>
 		<dt> <?php the_time('Y年n月j日'); ?></dt>
-		<dd> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+		<dd class="detail"> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
 		<?php the_excerpt(); ?>
+		<?php
+    $days = 30;
+    $today = date_i18n('U');
+    $entry = get_the_time('U');
+    $news = date('U',($today - $entry)) / 86400 ;
+    if( $days > $news ){ print '<span class="new">New!</span>'; }
+?>
 		</dd>
 		<?php
 		  endforeach;
@@ -26,9 +33,9 @@ get_header(); ?>
 		</dl>
 	</div><!-- News -->
 	<div class="large-7 small-12 colums right">
-		<h3>Coupon</h3>
+		<h3 class="field_tit">COUPON</h3>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-			<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/coupon.jpg" alt="クーポン一覧" />
+			<img class="coupon" src="<?php echo get_template_directory_uri(); ?>/assets/img/coupon.jpg" alt="クーポン一覧" />
 		</a>
 </div><!--SnapWidget-->
 </div>
@@ -36,7 +43,7 @@ get_header(); ?>
 <div class="front-news">
 	<div class="row">
 		<div class="large-12 columns">
-			<h3>最新のお知らせ</h3>
+			<h3 class="field_tit">NEW STYLE</h3>
 			<div class="row">
 				<?php query_posts( 'posts_per_page=4' ); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

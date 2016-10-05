@@ -111,7 +111,7 @@ $('.slider1').slick({
 });
     });
   </script>
-<script>
+<!-- <script>
 var ua = navigator.userAgent.toLowerCase();
 var isMobile = /iphone/.test(ua)||/android(.+)?mobile/.test(ua);
 if (!isMobile) {
@@ -119,6 +119,6 @@ $('[href^="tel:"]').on('click', function(e) {
 e.preventDefault();
 });
 }
-</script>
+
 </body>
 </html>
