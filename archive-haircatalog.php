@@ -10,7 +10,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">ヘアーカタログ</h1>
+				<h1 class="page-title">Hair&nbsp;Catalog</h1>
 			</header><!-- .page-header -->
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -30,5 +30,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'hairstyle' ); ?>
 <?php get_footer(); ?>

@@ -15,16 +15,17 @@ get_header(); ?>
 		    foreach( $newslist as $post ):
 		    setup_postdata( $post );
 		?>
+		<?php
+		$days = 30;
+		$today = date_i18n('U');
+		$entry = get_the_time('U');
+		$news = date('U',($today - $entry)) / 86400 ;
+		if( $days > $news ){ print '<span class="new">New!</span>'; }
+?>
 		<dt> <?php the_time('Y年n月j日'); ?></dt>
 		<dd class="detail"> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
 		<?php the_excerpt(); ?>
-		<?php
-    $days = 30;
-    $today = date_i18n('U');
-    $entry = get_the_time('U');
-    $news = date('U',($today - $entry)) / 86400 ;
-    if( $days > $news ){ print '<span class="new">New!</span>'; }
-?>
+
 		</dd>
 		<?php
 		  endforeach;
@@ -44,7 +45,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="large-12 columns">
 			<h3 class="field_tit">NEW STYLE</h3>
-			<div class="row">
+			<div class="row newstyle">
 				<?php query_posts( 'posts_per_page=4' ); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="large-3 small-12 columns">
@@ -64,7 +65,6 @@ get_header(); ?>
 								<div class="large-12 small-9 columns">
 									<div class="news-meta">
 										<div class="date">
-											<div class="genericon genericon-time"></div>
 											<?php the_time( 'Y/m/d' ); ?>
 										</div>
 										<p>

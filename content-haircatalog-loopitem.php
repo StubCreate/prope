@@ -12,7 +12,7 @@
 
 		<div class="large-9 small-9 columns">
 			<header class="entry-header">
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <?php echo get_the_term_list( $post->ID, 'haircatalog-cat', '<span class="staffCate">', ' , ', '</span>' );?></h3>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <?php echo get_the_term_list( $post->ID, 'haircatalog', '<span class="staffCate">', ' , ', '</span>' );?></h3>
 			</header><!-- .entry-header -->
 			<div><?php the_excerpt(); ?></div>
 		</div>

@@ -16,10 +16,9 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<script type="text/javascript"src="//webfonts.sakura.ne.jp/js/sakura.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css"/>
-	<script type="text/javascript"src="//webfonts.sakura.ne.jp/js/sakura.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Oswald|Shadows+Into+Light" rel="stylesheet">
 
 	<?php wp_head(); ?>
 	<!--[if lt IE 9]>
@@ -34,14 +33,14 @@
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="row">
-				<div class="site-branding large-7 small-5 small-centered large-uncentered columns">
+				<div class="site-branding large-7 small-12 small-centered large-uncentered columns">
 					<h1 class="site-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo00.png" alt="プロペラヘアー" />
 						</a>
 					</h1>
 				</div>
-				<div class="site-address large-5 small-7 small-centered large-uncentered columns">
+				<div class="site-address large-5 large-uncentered columns">
 			<ul class="snslogo">
 				<li class="cont_shop">
 					<span class="genericon genericon-phone gene"></span>
@@ -55,17 +54,6 @@
 			</ul>
 				</div>
 			</div>
-			<nav id="site-navigation" class="navigation-main" role="navigation">
-				<h1 class="menu-toggle text-right">
-					<div class="genericon genericon-menu"></div>
-				</h1>
-				<div class="row">
-					<div class="large-12 columns">
-						<?php wp_nav_menu( array( 'theme_location' =>'primary' ) ); ?>
-					</div>
-				</div>
-			</nav>
-			<!-- #site-navigation -->
 		</header>
 		<!-- #masthead -->
 		<?php if ( is_home() || is_front_page() ) : ?>
@@ -78,6 +66,17 @@
 						</div>
 					</div>
 		<?php endif; ?>
+		<nav id="site-navigation" class="navigation-main" role="navigation">
+			<h1 class="menu-toggle text-right">
+				<div class="genericon genericon-menu"></div>
+			</h1>
+			<div class="row posi_nav ">
+				<div class="large-12 columns">
+					<?php wp_nav_menu( array( 'theme_location' =>'primary' ) ); ?>
+				</div>
+			</div>
+		</nav>
+		<!-- #site-navigation -->
 
 <?php if ( ! is_front_page() ) : ?>
 		<div id="main" class="site-main row">
