@@ -225,21 +225,21 @@ function create_post_type_haircatalog() {
 }
 add_action( 'init', 'create_post_type_haircatalog', 0 );
 
- // function create_custom_taxonomy_staff() {
- // 	$args = array(
- // 		'public'              => true,
- // 		'show_ui'             => true,
- // 		'hierarchical'        => true,
- // 		'label'               => 'ヘアースタイル',
- //
- // 	);
- // 	register_taxonomy(
- // 		'haircatalog',  // カスタム分類名
- // 		'haircatalog',      // カスタム分類を使用する投稿タイプ名
- // 		$args
- // 	);
- // }
- // add_action( 'init', 'create_custom_taxonomy_haircatalog', 0 );
+ function create_custom_taxonomy_haircatalog() {
+  	$args = array(
+  		'public'              => true,
+  		'show_ui'             => true,
+  		'hierarchical'        => true,
+  		'label'               => 'ヘアースタイル',
+
+  	);
+  	register_taxonomy(
+  		'hairstyle',  // カスタム分類名
+  		'haircatalog',      // カスタム分類を使用する投稿タイプ名
+  		$args
+  	);
+  }
+  add_action( 'init', 'create_custom_taxonomy_haircatalog', 0 );
 
 
 /*ページではコメントを利用しない*/

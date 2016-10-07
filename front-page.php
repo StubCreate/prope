@@ -46,7 +46,7 @@ get_header(); ?>
 		<div class="large-12 columns">
 			<h3 class="field_tit">NEW STYLE</h3>
 			<div class="row newstyle">
-				<?php query_posts( 'posts_per_page=4' ); ?>
+				<?php query_posts("cat=20&showposts=4"); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="large-3 small-12 columns">
 					<a href="<?php the_permalink(); ?>">
@@ -83,7 +83,23 @@ get_header(); ?>
 	</div> <!-- /row -->
 </div> <!-- /front-news -->
 
+<div class="front-sp">
+	<div class="row">
+		<div class="large-6 columns">
+			<div class="circle">
+				<img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" />
+			</div>
+		</div>
+		<div class="large-6 columns">
+			<h2>ショップの<br />イメージコンセプト</h2>
+			<p>テキストが入ります。</p>
+		</div>
+	</div>
+</div>
+
+<div class="area_pick">
 	<div class="row front-feature">
+		<h3 class="info_tit">PICK&nbsp;UP</h3>
 	<?php if ( get_page_by_path( 'concept' ) ) : ?>
 		<div class="large-4 columns">
 			<a href="<?php echo get_permalink( get_page_by_path( 'concept' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.jpg" alt=""></a>
@@ -106,22 +122,19 @@ get_header(); ?>
 		</div>
 	<?php endif; ?>
 	</div>
+</div>
 
-
-
-	<div class="front-sp">
-		<div class="row">
-			<div class="large-6 columns">
-				<div class="circle">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/4.jpg" alt="" />
-				</div>
-			</div> <!--  -->
-
-			<div class="large-6 columns">
-				<h2>みんなの来店を<br />待ってるワンッ！</h2>
-				<p>たまに出勤する、店長のマルくんです。</p>
-			</div>
-		</div>
+<div class="catalog">
+	<div class="row">
+		<h3 class="info_tit">HAIR&nbsp;CATALOG</h3>
+		<div class="large-12">
+		<?php if(function_exists("get_smooth_slider_recent")){get_smooth_slider_recent();}?>
 	</div>
-	<div id="main" class="site-main row">
+</div>
+</div>
+
+
+
+
+<div id="main" class="site-main row">
 <?php get_footer(); ?>

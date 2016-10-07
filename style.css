@@ -2966,10 +2966,10 @@ li.comment {
   padding: 5px 0;
 }
 .widget .widget-title {
-  border-bottom: 1px solid #c6b688;
-  -webkit-box-shadow: 0 1px 0 #eae2cc;
-  -moz-box-shadow: 0 1px 0 #eae2cc;
-  box-shadow: 0 1px 0 #eae2cc;
+  border-bottom: 1px solid #003f8e;
+  -webkit-box-shadow: 0 1px 0 #003f8e;
+  -moz-box-shadow: 0 1px 0 #003f8e;
+  box-shadow: 0 1px 0 #eaf4fc;
   font-size: 0.9em;
 }
 
@@ -2981,14 +2981,13 @@ li.comment {
 .site-footer,
 .site-footer h4,
 .site-footer a {
-  color: #fff;
+  color: #606060;
 }
 
 .breadcrumb {
-  background-color: #e0d5b8;
-  color: #222;
+  background-color: #043c78;
+  color: #fff;
   padding-top: 10px;
-  margin-top: 20px;
 }
 .breadcrumb p {
   font-size: 0.75em;
@@ -2996,7 +2995,7 @@ li.comment {
 }
 
 #colophon {
-  background-color: #33201f;
+  background-color: #e0e0e0;
 }
 #colophon a:hover {
   text-decoration: underline;
@@ -3152,8 +3151,12 @@ ul.postList li {
   }
 }
 
+.site-main {
+
+}
+
 .front-feature {
-  margin-top: 120px;
+
 }
 .front-feature img {
   border-radius: 5px;
@@ -3169,6 +3172,7 @@ ul.postList li {
   padding: 10px 0;
   margin: 30px 0;
 }
+
 .front-news .date {
   margin-top: 10px;
 }
@@ -3195,6 +3199,12 @@ ul.postList li {
   padding: 0 5px;
 }
 
+.front-sp {
+  background-color: #fff;
+  padding: 10px 0;
+  margin: 30px 0;
+}
+
 .front-sp .circle {
   text-align: center;
 }
@@ -3202,6 +3212,19 @@ ul.postList li {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+}
+
+.area_pick {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 10px 0;
+  margin: 30px 0;
+}
+
+.catalog {
+  background-color: #fff;
+  padding: 10px 0;
+  margin: 30px 0;
 }
 
 h1.entry-title {
@@ -3389,6 +3412,16 @@ ul#page_link_menu {
 
 .archive .staff .entry-content {
   padding: 15px 15px;
+}
+
+.entry-content .haircatalog-thumbnail {
+  float: right;
+  width: 30%;
+}
+
+.entry-content .haircatalog-thumbnail img {
+  width: 100%;
+  height: auto;
 }
 
 .menu h1 {
@@ -3776,7 +3809,34 @@ h3.field_tit {
   font-family: 'Comfortaa', cursive;
   font-family: 'Shadows Into Light', cursive;
   font-family: 'Oswald', sans-serif;
+}
 
+h3.field_tit::before {
+  background: #192f60 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 4px;
+  margin: 10px auto;
+  width: 99px;
+  }
+
+h3.info_tit {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3.info_tit::before {
+    background: #192f60 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 10px auto 0;
+    width: 99px;
 }
 
 dl.list_news {
@@ -3820,6 +3880,9 @@ div.posi_nav {
   margin-bottom: 10px;
 }
 
+div.circle img.philosoy {
+  width: 60%;
+}
 
 /*Access*/
 #map_container {

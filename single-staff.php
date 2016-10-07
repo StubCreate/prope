@@ -7,19 +7,23 @@ get_header(); ?>
 
 	<div id="primary" class="content-area large-9 columns">
 		<div id="content" class="site-content staff" role="main">
-		<h1>Hair&nbsp;</h1>
+		<h1>Staff</h1>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<div class="entry-content">
-			<h2><?php the_title();?> <?php echo get_the_term_list( $post->ID, 'hairstyle', '<span class="staffCate">', ' , ', '</span>' );?></h2>
+			<h2><?php the_title();?> <?php echo get_the_term_list( $post->ID, 'staff-cat', '<span class="staffCate">', ' , ', '</span>' );?></h2>
 			<div class="staff-thumbnail"><?php the_post_thumbnail(); ?></div>
 			<div class="staff-info">
 				<dl>
-					<dt>担当スタイリスト</dt>
-					<dd><?php echo esc_html( post_custom( 'responsible' ) ); ?></dd>
+					<dt>趣味</dt>
+					<dd><?php echo esc_html( post_custom( 'favorite' ) ); ?></dd>
 				</dl>
 				<dl>
-					<dt>コンセプト</dt>
-					<dd><?php echo nl2br( esc_html( post_custom( 'concept' ) ) ); ?></dd>
+					<dt>得意なスタイル</dt>
+					<dd><?php echo esc_html( post_custom( 'from' ) ); ?></dd>
+				</dl>
+				<dl>
+					<dt>ひとこと</dt>
+					<dd><?php echo nl2br( esc_html( post_custom( 'message' ) ) ); ?></dd>
 				</dl>
 			</div>
 			<div class="staff-content"><?php the_content(); ?></div>

@@ -54,6 +54,16 @@
 			</ul>
 				</div>
 			</div>
+			<nav id="site-navigation" class="navigation-main" role="navigation">
+				<h1 class="menu-toggle text-right">
+					<div class="genericon genericon-menu"></div>
+				</h1>
+				<div class="row posi_nav ">
+					<div class="large-12 columns">
+						<?php wp_nav_menu( array( 'theme_location' =>'primary' ) ); ?>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<!-- #masthead -->
 		<?php if ( is_home() || is_front_page() ) : ?>
@@ -66,16 +76,7 @@
 						</div>
 					</div>
 		<?php endif; ?>
-		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<h1 class="menu-toggle text-right">
-				<div class="genericon genericon-menu"></div>
-			</h1>
-			<div class="row posi_nav ">
-				<div class="large-12 columns">
-					<?php wp_nav_menu( array( 'theme_location' =>'primary' ) ); ?>
-				</div>
-			</div>
-		</nav>
+
 		<!-- #site-navigation -->
 
 <?php if ( ! is_front_page() ) : ?>
