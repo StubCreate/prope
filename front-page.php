@@ -85,40 +85,44 @@ get_header(); ?>
 
 <div class="front-sp">
 	<div class="row">
-		<div class="large-6 columns">
+		<div class="large-5 columns">
 			<div class="circle">
-				<img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" />
+				<a href="<?php echo get_permalink( get_page_by_path( 'staff-cat' )->post ); ?>"><img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" /></a>
 			</div>
 		</div>
-		<div class="large-6 columns">
-			<h2>ショップの<br />イメージコンセプト</h2>
-			<p>テキストが入ります。</p>
+		<div class="large-3 columns kodawari">
+			<h1>Our&nbsp;Minds</h1>
+			<h2>自分的ヘアスタイル</h2>
+			<p>&nbsp;&nbsp;&nbsp;=&nbsp;ジブン的こだわり</p>
 		</div>
+		<div class="large-4 columns recruit">
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit.jpg" alt=""></a>
 	</div>
 </div>
 
 <div class="area_pick">
 	<div class="row front-feature">
-		<h3 class="info_tit">PICK&nbsp;UP</h3>
+		<center>
+		<h3 class="info_tit">PICK&nbsp;UP</h3></center>
 	<?php if ( get_page_by_path( 'concept' ) ) : ?>
 		<div class="large-4 columns">
-			<a href="<?php echo get_permalink( get_page_by_path( 'concept' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.jpg" alt=""></a>
-			<h5><a href="<?php echo get_permalink( get_page_by_path( 'concept' )->ID ); ?>">ハンモックのお席です</a></h5>
-			<p>客席はすべてハンモックとなっております。少し揺れながら、リラックスした時間をお過ごしください。 </p>
+			<a href="<?php echo get_permalink( get_page_by_path( 'concept' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/concept.jpg" alt="コンセプト"></a>
+			<h5><a href="<?php echo get_permalink( get_page_by_path( 'concept' )->ID ); ?>"><strong>コンセプト</strong></a></h5>
+			<p>丁寧で細やかな、カウンセリングと、幅広く個性あふれるデザインが特徴。</p>
 		</div>
 	<?php endif; ?>
 	<?php if ( get_page_by_path( 'menu' ) ) : ?>
 		<div class="large-4 columns">
-			<a href="<?php echo get_permalink( get_page_by_path( 'menu' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/2.jpg" alt=""></a>
-			<h5><a href="<?php echo get_permalink( get_page_by_path( 'menu' )->ID ); ?>">100種類以上のドリンク</a></h5>
-			<p>珈琲、紅茶からカクテルなどアルコール類もご準備しております。</p>
+			<a href="<?php echo get_permalink( get_page_by_path( 'menu' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu.jpg" alt="メニュー"></a>
+			<h5><a href="<?php echo get_permalink( get_page_by_path( 'menu' )->ID ); ?>"><strong>メニュー</strong></a></h5>
+			<p>カット・パーマの他にも充実したオーガニックカラーやヘッドスパメニューも。</p>
 		</div>
 	<?php endif; ?>
 	<?php if ( get_page_by_path( 'access' ) ) : ?>
 		<div class="large-4 columns">
-			<a href="<?php echo get_permalink( get_page_by_path( 'access' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/3.jpg" alt=""></a>
-			<h5><a href="<?php echo get_permalink( get_page_by_path( 'access' )->ID ); ?>">吉祥寺駅徒歩5分</a></h5>
-			<p>南側公園口より、徒歩5分。当店までの詳しい地図などはこちらを御覧ください。</p>
+			<a href="<?php echo get_permalink( get_page_by_path( 'access' )->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/access.jpg" alt="アクセス"></a>
+			<h5><a href="<?php echo get_permalink( get_page_by_path( 'access' )->ID ); ?>"><strong>アクセス</strong></a></h5>
+			<p>プロペラヘアーまでの詳しい地図などはこちらを御覧ください。</p>
 		</div>
 	<?php endif; ?>
 	</div>
@@ -128,7 +132,7 @@ get_header(); ?>
 	<div class="row">
 		<h3 class="info_tit">HAIR&nbsp;CATALOG</h3>
 		<div class="large-12">
-		<?php if(function_exists("get_smooth_slider_recent")){get_smooth_slider_recent();}?>
+		<?php if( function_exists( 'get_smooth_slider_recent' ) ) { get_smooth_slider_recent(); } ?>
 	</div>
 </div>
 </div>

@@ -4,7 +4,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 	<div class="row">
-		<div class="large-3 small-3 columns thumbnail">
+		<!-- <div class="large-3 small-3 columns thumbnail">
 			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', '_s' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'top-thumb' ); ?>
@@ -12,8 +12,8 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/no_image.gif" alt="" title="" />
 				<?php endif; ?>
 			</a>
-		</div> <!-- thumbnail -->
-		<div class="large-9 small-9 columns">
+		</div>  thumbnail  -->
+		<div class="large-12 small-12 columns">
 			<header class="entry-header">
 				<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', '_s' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 
