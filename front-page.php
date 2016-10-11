@@ -35,7 +35,7 @@ get_header(); ?>
 	</div><!-- News -->
 	<div class="large-7 small-12 colums right">
 		<h3 class="field_tit">COUPON</h3>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<a href="<?php bloginfo('url'); ?>/2426">
 			<img class="coupon" src="<?php echo get_template_directory_uri(); ?>/assets/img/coupon.jpg" alt="クーポン一覧" />
 		</a>
 </div><!--SnapWidget-->
@@ -44,7 +44,7 @@ get_header(); ?>
 <div class="front-news">
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="field_tit">NEW STYLE</h3>
+			<h3 class="field_tit">PICK&nbsp;UP</h3>
 			<div class="row newstyle">
 				<?php query_posts("cat=20&showposts=4"); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -85,19 +85,27 @@ get_header(); ?>
 
 <div class="front-sp">
 	<div class="row">
-		<div class="large-5 columns">
-			<div class="circle">
-				<a href="<?php echo get_permalink( get_page_by_path( 'staff-cat' )->post ); ?>"><img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" /></a>
+		<div class="large-5 small-12 columns">
+			<div class="large-12 small-12 columns circle">
+				<a href="<?php bloginfo('url'); ?>/?post_type=staff"><img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" /></a>
+				<div class="large-8 small-8 columns all_staff">
+         <span>PROPELLER&nbsp;HAIR'S<br>ALL&nbsp;STAFF&nbsp;PAGE</span>
+				</div>
 			</div>
 		</div>
-		<div class="large-3 columns kodawari">
+		<div class="large-3 small-12 columns kodawari">
 			<h1>Our&nbsp;Minds</h1>
 			<h2>自分的ヘアスタイル</h2>
 			<p>&nbsp;&nbsp;&nbsp;=&nbsp;ジブン的こだわり</p>
 		</div>
-		<div class="large-4 columns recruit">
-			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit.jpg" alt=""></a>
+		<div class="large-4 small-12 columns recruit">
+			<div class="large-8 small-8 columns info_recruit">
+				<span>GO&nbsp;TO!<br>RECRUITMENT&nbsp;SITE！</span>
+			</div>
+				<div class="large-12 small-12 columns">
+			<a href="#"><img class="bnr_recruit" src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit.jpg" alt="リクルートサイトへ"></a>
 	</div>
+</div>
 </div>
 
 <div class="area_pick">
@@ -130,10 +138,16 @@ get_header(); ?>
 
 <div class="catalog">
 	<div class="row">
-		<h3 class="info_tit">HAIR&nbsp;CATALOG</h3>
-		<div class="large-12">
-		<?php if( function_exists( 'get_smooth_slider_recent' ) ) { get_smooth_slider_recent(); } ?>
-	</div>
+		<div class="large-6 columns">
+		<center>
+		<h3 class="cata_tit">HAIR&nbsp;CATALOG</h3></center>
+		<div class="slider1">
+		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="トップイメージ01" /></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="トップイメージ02" /></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.png" alt="トップイメージ03" /></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="トップイメージ04" /></div>
+		</div>
+
 </div>
 </div>
 

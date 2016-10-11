@@ -18,7 +18,6 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Oswald|Shadows+Into+Light" rel="stylesheet">
 
 	<?php wp_head(); ?>
 	<!--[if lt IE 9]>
@@ -43,7 +42,7 @@
 				<div class="site-address large-5 large-uncentered columns">
 			<ul class="snslogo">
 				<li class="cont_shop">
-					<span class="genericon genericon-phone gene"></span>
+					<a href="<?php bloginfo('url'); ?>/contact"><span class="genericon genericon-phone gene"></span></a>
 			</li>
 				<li class="facebook"><a href="https://www.facebook.com/PROPELLERHAIR" target="_blank">
 					<img class="btn_fb" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.png" alt="Facebook" />
@@ -76,6 +75,23 @@
 						</div>
 					</div>
 		<?php endif; ?>
+		<!-- <div class="row">
+		<div class="small-6 small-centered columns">
+			<center>
+		<ul class="snslogo_sp">
+			<li class="cont_shop_sp">
+				<span class="genericon genericon-phone gene"></span>
+		</li>
+			<li class="facebook_sp"><a href="https://www.facebook.com/PROPELLERHAIR" target="_blank">
+				<img class="btn_fb_sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook_logo.png" alt="Facebook" />
+			</a></li>
+			<li class="insta_sp"><a href="https://www.instagram.com/propeller_hair/" target="_blank">
+				<img class="btn_insta" src="<?php echo get_template_directory_uri(); ?>/assets/img/insta_logo.png" alt="Instagram" />
+			</a></li>
+		</ul>
+	</center>
+	</div>
+</div> -->
 
 		<!-- #site-navigation -->
 

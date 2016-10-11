@@ -23,7 +23,7 @@
 			<div class="row">
 
 
-				<div class="large-4 columns">
+				<div class="large-6 columns">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php if ( ! dynamic_sidebar( 'footer-2' ) ) : ?>
 					<aside id="search" class="widget widget_search">
@@ -33,7 +33,7 @@
 					<?php endif;?>
 				</div>
 
-				<div class="large-4 columns">
+				<!-- <div class="large-4 columns">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php if ( ! dynamic_sidebar( 'footer-1' ) ) : ?>
 					<aside id="calendar" class="widget widget_calendar">
@@ -43,9 +43,9 @@
 							</ul>
 					</aside>
 					<?php endif;?>
-				</div>
+				</div> -->
 
-				<div class="large-4 columns">
+				<div class="large-6 columns">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php if ( ! dynamic_sidebar( 'footer-3' ) ) : ?>
 					<aside id="site_meta" class="widget widget_site_meta">
