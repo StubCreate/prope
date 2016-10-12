@@ -78,6 +78,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 $('.slider1').slick({
+	centerMode: true, //要素を中央寄せ
+  centerPadding:'20px', //両サイドの見えている部分のサイズ
   dots: false,
   infinite: true,
 	autoplay: true,
@@ -118,6 +120,56 @@ $('.slider1').slick({
 });
     });
   </script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('.slider2').slick({
+		centerMode: true, //要素を中央寄せ
+	  centerPadding:'50px', //両サイドの見えている部分のサイズ
+	  dots: true,
+	  infinite: true,
+		autoplay: true,
+	  autoplaySpeed: 5000,
+		arrows: true,
+		directionNav: false,
+		ontrolNav: false,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 5,
+	        slidesToScroll: 1,
+	        infinite: true,
+	        dots: false,
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
+	    });
+	  </script>
+
+
+
+
+
 <script>
 var ua = navigator.userAgent.toLowerCase();
 var isMobile = /iphone/.test(ua)||/android(.+)?mobile/.test(ua);

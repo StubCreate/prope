@@ -19,7 +19,12 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php _s_content_nav( 'nav-below' ); ?>
+			<?php if ( class_exists( 'WP_SiteManager_page_navi' ) ) {
+						WP_SiteManager_page_navi::page_navi( 'items=7&prev_label=Prev&next_label=Next&first_label=First&last_label=Last&show_num=1&num_position=after' );
+					} else {
+						_s_content_nav( 'nav-below' );
+					}
+				?>
 
 		<?php else : ?>
 
@@ -30,5 +35,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php get_sidebar( 'hairstyle' ); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

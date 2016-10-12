@@ -29,9 +29,15 @@ get_header(); ?>
 		</dd>
 		<?php
 		  endforeach;
-		  wp_reset_postdata();
 		?>
+	  <?php
+	    else;
+	  ?>
+		<dt></dt>
+		<dd class="detail">現在、お知らせはありません。</dd>
+		<?php endif; ?>
 		</dl>
+		<?php wp_reset_postdata(); ?>
 	</div><!-- News -->
 	<div class="large-7 small-12 colums right">
 		<h3 class="field_tit">COUPON</h3>
@@ -89,14 +95,15 @@ get_header(); ?>
 			<div class="large-12 small-12 columns circle">
 				<a href="<?php bloginfo('url'); ?>/?post_type=staff"><img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" /></a>
 				<div class="large-8 small-8 columns all_staff">
-         <span>PROPELLER&nbsp;HAIR'S<br>ALL&nbsp;STAFF&nbsp;PAGE</span>
+         <span>PROPELLER&nbsp;HAIR'S</span><br>
+				 <span>ALL&nbsp;STAFF&nbsp;PAGE</span>
 				</div>
 			</div>
 		</div>
 		<div class="large-3 small-12 columns kodawari">
 			<h1>Our&nbsp;Minds</h1>
 			<h2>自分的ヘアスタイル</h2>
-			<p>&nbsp;&nbsp;&nbsp;=&nbsp;ジブン的こだわり</p>
+			<p>&nbsp;&nbsp;=&nbsp;ジブン的こだわり</p>
 		</div>
 		<div class="large-4 small-12 columns recruit">
 			<div class="large-8 small-8 columns info_recruit">
@@ -136,22 +143,20 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="catalog">
+
 	<div class="row">
 		<div class="large-6 columns">
 		<center>
 		<h3 class="cata_tit">HAIR&nbsp;CATALOG</h3></center>
-		<div class="slider1">
-		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide01.jpg" alt="トップイメージ01" /></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide02.jpg" alt="トップイメージ02" /></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide05.png" alt="トップイメージ03" /></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide04.jpg" alt="トップイメージ04" /></div>
+		<div class="slider2">
+		<div><a href="<?php bloginfo('url'); ?>/haircatalog/サイド短めのショートヘアー"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata01.jpg" alt="ヘアーカタログ01" /></a></div>
+		<div><a href="<?php bloginfo('url'); ?>/haircatalog/まっすぐ揃ったバングが印象的"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata02.jpg" alt="ヘアーカタログ02" /></a></div>
+		<div><a href="<?php bloginfo('url'); ?>/haircatalog/女性らしく、活動的に"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata03.jpg" alt="ヘアーカタログ03" /></a></div>
+		<div><a href="<?php bloginfo('url'); ?>/haircatalog/軽めのパーマ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata04.jpg" alt="ヘアーカタログ04" /></a></div>
+		<div><a href="<?php bloginfo('url'); ?>/haircatalog/黒髪のスタイリッシュアレンジ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata05.jpg" alt="ヘアーカタログ05" /></a></div>
 		</div>
-
 </div>
 </div>
-
-
 
 
 <div id="main" class="site-main row">
