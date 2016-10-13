@@ -29,15 +29,9 @@ get_header(); ?>
 		</dd>
 		<?php
 		  endforeach;
+		  wp_reset_postdata();
 		?>
-	  <?php
-	    else;
-	  ?>
-		<dt></dt>
-		<dd class="detail">現在、お知らせはありません。</dd>
-		<?php endif; ?>
 		</dl>
-		<?php wp_reset_postdata(); ?>
 	</div><!-- News -->
 	<div class="large-7 small-12 colums right">
 		<h3 class="field_tit">COUPON</h3>
@@ -95,8 +89,7 @@ get_header(); ?>
 			<div class="large-12 small-12 columns circle">
 				<a href="<?php bloginfo('url'); ?>/?post_type=staff"><img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" /></a>
 				<div class="large-8 small-8 columns all_staff">
-         <span>PROPELLER&nbsp;HAIR'S</span><br>
-				 <span>ALL&nbsp;STAFF&nbsp;PAGE</span>
+         <span class="read">PROPELLER&nbsp;HAIR'S<br>STAFF&nbsp;PAGE</span>
 				</div>
 			</div>
 		</div>
@@ -107,7 +100,7 @@ get_header(); ?>
 		</div>
 		<div class="large-4 small-12 columns recruit">
 			<div class="large-8 small-8 columns info_recruit">
-				<span>GO&nbsp;TO!<br>RECRUITMENT&nbsp;SITE！</span>
+				<span class="read">GO&nbsp;TO!<br>RECRUITMENT&nbsp;SITE！</span>
 			</div>
 				<div class="large-12 small-12 columns">
 			<a href="#"><img class="bnr_recruit" src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit.jpg" alt="リクルートサイトへ"></a>
@@ -156,6 +149,12 @@ get_header(); ?>
 		<div><a href="<?php bloginfo('url'); ?>/haircatalog/黒髪のスタイリッシュアレンジ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata05.jpg" alt="ヘアーカタログ05" /></a></div>
 		</div>
 </div>
+<div class="large-6 columns">
+	<center>
+<div class="fb-page" data-href="https://www.facebook.com/PROPELLERHAIR" data-tabs="timeline" data-width="400" data-height="260" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PROPELLERHAIR" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PROPELLERHAIR">プロペラヘアー</a></blockquote></div>
+</center>
+</div>
+
 </div>
 
 

@@ -28,6 +28,16 @@
 	<![endif]-->
 </head>
 <body <?php body_class(); ?>>
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=343598589322953";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div id="page" class="hfeed site">
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header" role="banner">
