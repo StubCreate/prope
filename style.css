@@ -1,6 +1,6 @@
 
-@import 'https://fonts.googleapis.com/css?family=Abel|Comfortaa|Crimson+Text|Dosis|Josefin+Sans|Meera+Inimai|Nova+Mono|Open+Sans|Open+Sans+Condensed:300|Quicksand';
-@import 'https://fonts.googleapis.com/css?family=Abel|Comfortaa|Crimson+Text|Dosis|Josefin+Sans|Meera+Inimai|Nova+Mono|Open+Sans|Open+Sans+Condensed:300|Quicksand|Shadows+Into+Light';
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
 
 
@@ -97,6 +97,11 @@ html {
  */
 body {
   margin: 0;
+}
+
+.entry-utility,
+.entry-meta {
+    display: none;
 }
 
 /* ==========================================================================
@@ -2317,6 +2322,14 @@ table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoo
   line-height: 1.125em;
 }
 
+@media only screen and (max-width: 460px) {
+  table {
+    background: #fff;
+    margin-bottom: 1.25em;
+    border: none;
+  }
+}
+
 /* ==========================================================================
    _s
    ========================================================================== */
@@ -2910,6 +2923,7 @@ pre {
 #secondary {
   background-color: rgba(241, 241, 241, 1);
   padding-top: 20px;
+  margin-top: 10px;
 }
 
 #main-img {
@@ -2972,16 +2986,19 @@ li.comment {
   list-style-type: none;
   line-height: 1.2;
   padding: 10px 0;
+  font-family: 'Dosis', sans-serif;
 }
 .widget .widget-title {
-  border-bottom: 1px solid #003f8e;
-  -webkit-box-shadow: 0 1px 0 #003f8e;
-  -moz-box-shadow: 0 1px 0 #003f8e;
-  box-shadow: 0 1px 0 #eaf4fc;
+  border-bottom: 1px solid #696969;
+  -webkit-box-shadow: 0 1px 0 #e0e0e0;
+  -moz-box-shadow: 0 1px 0 #e0e0e0;
+  box-shadow: 0 1px 0 #e0e0e0;
   font-size: 0.9em;
   padding: 5px 0;
-  color: rgba(49, 49, 49, 1);
+  color: rgba(37, 67, 125, 1);
   font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 .site-footer {
@@ -3050,7 +3067,7 @@ ul.postList li {
   padding: 10px 25px;
   color: #555555;
   font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -3079,11 +3096,6 @@ ul.postList li {
   background-color: #fff;
 }
 
-.navigation-main ul ul li {
-  /*border-bottom: 1px solid #192f60;*/
-
-}
-
 .navigation-main li:hover > a {
   border-bottom: 2px solid rgba(49, 49, 49, 1);
 }
@@ -3106,7 +3118,6 @@ ul.postList li {
   display: none;
   cursor: pointer;
   margin: 0 20px 0 0;
-  padding: 10px 0;
 }
 
 .main-small-navigation ul {
@@ -3114,7 +3125,8 @@ ul.postList li {
 }
 
 .menu-toggle .genericon-menu {
-  font-size: 0.725em;
+  font-size: 1.4em;
+  margin-bottom: 20px;
 }
 .main-small-navigation li {
   list-style: none;
@@ -3126,7 +3138,7 @@ ul.postList li {
 .main-small-navigation li a {
   display: block;
   padding: 10px 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
 
 }
 
@@ -3154,22 +3166,10 @@ ul.postList li {
     display: none;
   }
 
-  #site-navigation {
-  background: rgba(240, 248, 255, 1);
-}
-
   #site-navigation .genericon-menu {
     color: #666c67;
-    border-style : Solid;
-    border-color : #A1B2BF;
-    border-color : rgba(161, 178, 191, 1);
-    border-width : 1px;
-    border-radius : 5px;
-    -moz-border-radius : 5px;
-    -webkit-border-radius : 5px;
     padding: 2%;
     width: 35px;
-    height: 30px;
   }
 }
 
@@ -3255,15 +3255,16 @@ h1.entry-title {
   color: #003f8e;
   font-weight: bold;
   padding: 5px 0px;
-  font-family: 'Open Sans', sans-serif;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Roboto Mono', monospace;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.7em;
 
 }
 
 .entry-content h2 {
   border-left: 7px solid #003f8e;
   padding-left: 10px;
+  font-size: 1.2em;
 }
 
 .entry-content h3 {
@@ -3367,6 +3368,9 @@ ul#page_link_menu {
   color: #003f8e;
   font-weight: bold;
   padding: 5px 0px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  font-size: 2em;
 }
 
 .staff .entry-content {
@@ -3388,6 +3392,7 @@ ul#page_link_menu {
   line-height: 110%;
   position: relative;
   border-left: none;
+  font-size: 1.2em;
 }
 
 .staff .entry-content .staffCate {
@@ -3456,10 +3461,10 @@ ul#page_link_menu {
 .menu h1 {
   color: #003f8e;
   font-weight: bold;
-  padding: 5px 0;
-  font-family: 'Open Sans', sans-serif;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Roboto Mono', monospace;
+  padding: 5px 0px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  font-size: 2em;
 }
 
 .menu-cat-set {
@@ -3826,11 +3831,33 @@ ul.snslogo_sp {
 }
 
 h1.site-logo {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-h1.site-logo img.logo {
-  width: 60%;
+h1.site-logo span {
+    color: rgba(1, 1, 1, 1);
+    font-family: "Dosis",sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+h1.site-logo span a {
+    color: rgba(1, 1, 1, 1);
+    font-family: "Dosis",sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+div.reserve {
+  display: none;
+  border: 2px solid #202020;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Dosis', sans-serif;
+  color: #606060;
+  width: 100px;
+  height: 46px;
+  margin: 0 auto;
 }
 
 h3.field_tit {
@@ -3838,7 +3865,7 @@ h3.field_tit {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 h3.field_tit::before {
@@ -3854,20 +3881,22 @@ h3.info_tit {
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #606060;
   width: 100px;
-  padding: 1%;
+  padding-top: 12px;
+  height: 46px;
 }
 
 h3.cata_tit {
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #606060;
   width: 160px;
-  padding: 1%;
+  padding-top: 12px;
+  height: 47px;
 }
 
 dl.list_news {
@@ -3915,7 +3944,7 @@ div.circle img.philosoy {
 
 span.read {
   font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #606060;
   line-height: 1.7;
 }
@@ -3927,7 +3956,7 @@ div.kodawari {
 }
 
 div.kodawari h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: rgba(49, 49, 49, 1);
   font-weight: bold;
   font-size: 2.5rem;
@@ -3975,7 +4004,134 @@ div.recruit img.bnr_recruit {
   right: 20px;
 }
 
+div.area_und {
+  height: 400px;
+}
+
+h3.social_tit {
+  border: 2px solid #202020;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Dosis', sans-serif;
+  color: #606060;
+  width: 160px;
+  padding-top: 12px;
+  height: 47px;
+}
+
+div.area_seecata {
+  text-align: center;
+  padding-top: 10px;
+}
+
+span.next {
+  color: #606060;
+  font-size: 28px;
+}
+
+p.cata_see {
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  color: #606060;
+  position: relative;
+  bottom:18px;
+}
+
+h1.ftr-logo {
+  margin-top: 10px;
+}
+
+h1.ftr-logo span {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Dosis",sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+p.ftr-add {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Dosis",sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+
+/*HairCatalog*/
+
+ul.style_detail {
+   display: inline-flex;
+   float: left;
+   list-style: none;
+   margin: 10px auto;
+ }
+
+ul.style_detail li {
+    border-right: 1px solid #CCC;
+    list-style: none;
+    width: auto;
+    padding: 0 10px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em:
+  }
+
 /*Access*/
+
+table.access {
+  margin-top: 20px;
+  width: 100%;
+}
+
+table.access tr:nth-of-type(even) {
+  background: #f9f9f9;
+}
+
+table.access th {
+  text-align: left;
+  width: 30%;
+}
+
+table.access td {
+  text-align: left;
+  width: 70%;
+}
+
+/*Contact*/
+div.btn_reserve {
+  background : rgba(49, 49, 49, 1);
+  padding: 2%;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+div.btn_reserve a {
+  background : rgba(49, 49, 49, 1);
+  padding: 2%;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 30px;
+  opacity: 0,8;
+}
+
+.btn_reserve span.white {
+  color: #fff;
+  position: relative;
+  left: 5px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  top:-6px;
+}
+
+span.next {
+  position: relative;
+  top:4px;
+}
+
+section.mr_und {
+  margin-bottom: 40px;
+}
+
+
+
 #map_container {
   position: relative;
   padding-top: 50%;
@@ -3989,12 +4145,23 @@ div.recruit img.bnr_recruit {
 
 @media only screen and (max-width: 768px) {
 
-  h1.site-logo {
-    margin-top: 60px;
-  }
+  div.reserve {
+  display: inherit;
+  border: 2px solid #202020;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Dosis', sans-serif;
+  color: #606060;
+  width: 100px;
+  height: 46px;
+  margin: 0 auto;
+  padding: 2%;
+}
 
-  h1.site-logo img.logo {
-    width: 80%;
+
+
+  h1.site-logo {
+    margin-top: 40px;
   }
 
   ul.snslogo {
@@ -4015,7 +4182,56 @@ div.recruit img.bnr_recruit {
     margin-bottom: 0px;
   }
 
+  .area_pick {
+    background-color: rgba(241, 241, 241, 1);
+    width: 100%;
+    padding: 10px 0;
+    margin: 48px 0;
+  }
 
+  div.recruit {
+    position: relative;
+    top:100px;
+    left: -34px;
+  }
+
+  .info_recruit {
+    background : rgba(224, 224, 224, 1);
+    padding: 7%;
+    position: relative;
+    right: -90px;
+    z-index: 100;
+    height: 90px;
+    bottom: -20px;
+    width: 180px;
+  }
+
+  div.all_staff{
+    background : rgba(224, 224, 224, 1);
+    padding: 5%;
+    position: relative;
+    left: 8px;
+    z-index: 100;
+    bottom:10px;
+    height: 80px;
+  }
+
+  div.btn_reserve {
+    background : rgba(49, 49, 49, 1);
+    padding: 3%;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  div.btn_reserve a {
+    background : rgba(49, 49, 49, 1);
+    padding: 3%;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
 
 }
 
@@ -4038,8 +4254,47 @@ div.recruit img.bnr_recruit {
     text-align: center;
   }
 
+  div.all_staff{
+    background : rgba(224, 224, 224, 1);
+    padding: 3%;
+    position: relative;
+    left: 8px;
+    z-index: 100;
+    bottom:30px;
+    height: 80px;
+    width: 220px;
+  }
+
   div.recruit {
     position: static;
+  }
+
+  .info_recruit {
+    background : rgba(224, 224, 224, 1);
+    padding: 4%;
+    position: relative;
+    left: 360px;
+    z-index: 100;
+    height: 90px;
+    bottom: -20px;
+    width: 200px;
+  }
+
+  div.btn_reserve {
+    background : rgba(49, 49, 49, 1);
+    padding: 3%;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  div.btn_reserve a {
+    background : rgba(49, 49, 49, 1);
+    padding: 5%;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+    opacity: 0.8;
   }
 
 }
@@ -4064,14 +4319,84 @@ div.recruit img.bnr_recruit {
     text-align: center;
   }
 
+  div.all_staff{
+    background : rgba(224, 224, 224, 1);
+    padding: 6%;
+    position: relative;
+    left: 60px;
+    z-index: 100;
+    bottom:10px;
+    height: 80px;
+    width: 220px;
+  }
+
   div.recruit {
     position: static;
+  }
+
+  .info_recruit {
+    background : rgba(224, 224, 224, 1);
+    padding: 7%;
+    position: relative;
+    left: 110px;
+    z-index: 100;
+    height: 90px;
+    bottom: -20px;
+    width: 190px;
+  }
+
+  /*Access*/
+  table.access {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+  }
+
+  table.access tr:nth-of-type(even) {
+    background: #fff;
+  }
+
+ table.access tr {
+   border-bottom: 1px solid #999;
+ }
+
+  table.access th {
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+
+  table.access td {
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+
+  /*contact*/
+
+  div.btn_reserve {
+    background : rgba(49, 49, 49, 1);
+    padding: 5%;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  div.btn_reserve a {
+    background : rgba(49, 49, 49, 1);
+    padding: 5%;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+    opacity: 0.8;
   }
 
 }
 
 /*Form*/
-.form-width { max-width: 100%;}
+.form-width {
+  max-width: 100%;
+}
 
 span.contact {
   color: #e95464;

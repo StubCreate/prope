@@ -45,7 +45,7 @@
 				<div class="site-branding large-7 small-12 small-centered large-uncentered columns">
 					<h1 class="site-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo00.png" alt="プロペラヘアー" />
+							<span>PROPELLER&nbsp;HAIR</span>
 						</a>
 					</h1>
 				</div>
@@ -63,6 +63,9 @@
 			</ul>
 				</div>
 			</div>
+
+			<div class="reserve"><a href="<?php bloginfo('url'); ?>/contact">Reserve</a></div>
+
 			<nav id="site-navigation" class="navigation-main" role="navigation">
 				<h1 class="menu-toggle text-right">
 					<div class="genericon genericon-menu"></div>

@@ -21,30 +21,19 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="row">
-
-
 				<div class="large-6 columns">
-					<?php do_action( 'before_sidebar' ); ?>
-					<?php if ( ! dynamic_sidebar( 'footer-2' ) ) : ?>
-					<aside id="search" class="widget widget_search">
-						<h4 class="widget-title">MENU</h4>
-							<?php wp_nav_menu( array( 'theme_location' =>'primary', 'container' => '', 'menu_class' => 'site-map', 'depth' => 1 ) ); ?>
-					</aside>
-					<?php endif;?>
+					<h1 class="ftr-logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<span>PROPELLER&nbsp;HAIR</span>
+						</a>
+					</h1>
+					<p class="ftr-add">Namiki<br>
+						Sera&nbsp;Building&nbsp;2F&nbsp;1-30&nbsp;Nakamachi,Naka-ku,Hiroshima<br>
+            082-544-3511</p>
+					<p class="ftr-add">Danbara<br>
+						Heart-D 2F 3-20-13&nbsp;Danbara,Minami-ku,Hiroshima<br>
+            082-506-1941</p>
 				</div>
-
-				<!-- <div class="large-4 columns">
-					<?php do_action( 'before_sidebar' ); ?>
-					<?php if ( ! dynamic_sidebar( 'footer-1' ) ) : ?>
-					<aside id="calendar" class="widget widget_calendar">
-						<h4 class="widget-title">NEW</h4>
-							<ul>
-								<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-							</ul>
-					</aside>
-					<?php endif;?>
-				</div> -->
-
 				<div class="large-6 columns">
 					<?php do_action( 'before_sidebar' ); ?>
 					<?php if ( ! dynamic_sidebar( 'footer-3' ) ) : ?>
@@ -64,7 +53,7 @@
 			<div class="row">
 				<div class="large-12 columns">
 					<div class="site-info text-center">
-						<p>Copyright&copy; <?php echo date_i18n( 'Y' );?><?php if ( get_page_by_path( 'sitemap' ) ) : ?>　<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> All Rights Reserved. | <a href="<?php echo get_permalink( get_page_by_path( 'sitemap' )->ID ); ?>" title="sitemap" >Sitemap</a><?php endif; ?></p>
+						<p class="crdt">Copyright&copy; <?php echo date_i18n( 'Y' );?><?php if ( get_page_by_path( 'sitemap' ) ) : ?>　<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> All Rights Reserved. | <a href="<?php echo get_permalink( get_page_by_path( 'sitemap' )->ID ); ?>" title="sitemap" >Sitemap</a><?php endif; ?></p>
 					</div><!-- .site-info -->
 				</div>
 			</div>
@@ -78,8 +67,6 @@
 <script type="text/javascript">
 $(document).ready(function(){
 $('.slider1').slick({
-	centerMode: true, //要素を中央寄せ
-  centerPadding:'20px', //両サイドの見えている部分のサイズ
   dots: false,
   infinite: true,
 	autoplay: true,
@@ -138,7 +125,7 @@ $('.slider1').slick({
 	    {
 	      breakpoint: 1024,
 	      settings: {
-	        slidesToShow: 5,
+	        slidesToShow: 3,
 	        slidesToScroll: 1,
 	        infinite: true,
 	        dots: false,
