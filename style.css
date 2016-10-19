@@ -2937,7 +2937,6 @@ pre {
 
 article.post {
   margin-bottom: 30px;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
 
@@ -2952,7 +2951,6 @@ article .thumbnail {
 
 
 .single article {
-  border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
 
@@ -2986,7 +2984,7 @@ li.comment {
   list-style-type: none;
   line-height: 1.2;
   padding: 10px 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
 }
 .widget .widget-title {
   border-bottom: 1px solid #696969;
@@ -2997,7 +2995,7 @@ li.comment {
   padding: 5px 0;
   color: rgba(37, 67, 125, 1);
   font-weight: bold;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   letter-spacing: 1.5px;
 }
 
@@ -3040,6 +3038,13 @@ ul.postList li {
 	padding: 5px 0px;
 }
 
+.front-news {
+  background:url("assets/img/background_style.jpg") repeat-y;
+  background-size: contain;
+  padding: 10px 0;
+  margin: 30px 0;
+}
+
 
 /* =Menu
 ----------------------------------------------- */
@@ -3067,7 +3072,7 @@ ul.postList li {
   padding: 10px 25px;
   color: #555555;
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   letter-spacing: 1px;
 }
 
@@ -3125,7 +3130,7 @@ ul.postList li {
 }
 
 .menu-toggle .genericon-menu {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 20px;
 }
 .main-small-navigation li {
@@ -3138,7 +3143,7 @@ ul.postList li {
 .main-small-navigation li a {
   display: block;
   padding: 10px 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
 
 }
 
@@ -3190,7 +3195,8 @@ ul.postList li {
 }
 
 .front-news {
-  background-color:#f0f8ff;
+  background:url("assets/img/background_style.jpg") repeat-y;
+  background-size: contain;
   padding: 10px 0;
   margin: 30px 0;
 }
@@ -3255,7 +3261,7 @@ h1.entry-title {
   color: #003f8e;
   font-weight: bold;
   padding: 5px 0px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   letter-spacing: 1px;
   font-size: 1.7em;
 
@@ -3368,7 +3374,7 @@ ul#page_link_menu {
   color: #003f8e;
   font-weight: bold;
   padding: 5px 0px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   letter-spacing: 1px;
   font-size: 2em;
 }
@@ -3462,7 +3468,7 @@ ul#page_link_menu {
   color: #003f8e;
   font-weight: bold;
   padding: 5px 0px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   letter-spacing: 1px;
   font-size: 2em;
 }
@@ -3848,12 +3854,12 @@ h1.site-logo span a {
     font-weight: bold;
 }
 
-div.reserve {
+a.reserve {
   display: none;
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   width: 100px;
   height: 46px;
@@ -3865,7 +3871,7 @@ h3.field_tit {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
 }
 
 h3.field_tit::before {
@@ -3881,7 +3887,7 @@ h3.info_tit {
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   width: 100px;
   padding-top: 12px;
@@ -3892,7 +3898,7 @@ h3.cata_tit {
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   width: 160px;
   padding-top: 12px;
@@ -3944,7 +3950,7 @@ div.circle img.philosoy {
 
 span.read {
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   line-height: 1.7;
 }
@@ -3956,7 +3962,7 @@ div.kodawari {
 }
 
 div.kodawari h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: rgba(49, 49, 49, 1);
   font-weight: bold;
   font-size: 2.5rem;
@@ -4012,7 +4018,7 @@ h3.social_tit {
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   width: 160px;
   padding-top: 12px;
@@ -4025,13 +4031,13 @@ div.area_seecata {
 }
 
 span.next {
-  color: #606060;
+  color: #fff;
   font-size: 28px;
 }
 
 p.cata_see {
   font-size: 1.2rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   position: relative;
   bottom:18px;
@@ -4069,9 +4075,39 @@ ul.style_detail li {
     list-style: none;
     width: auto;
     padding: 0 10px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', Meiryo;
     font-size: 1em:
   }
+
+  /*hairstyle*/
+div.waku_style {
+  background:url("assets/img/waku_style.png")no-repeat;
+  height: 396px;
+}
+
+div.waku_style img {
+  margin-top: 12px;
+  position: relative;
+  right: 2.5px;
+  bottom: 0.7px;
+}
+
+div.pickup_style {
+  display: flex;
+}
+
+div.pickup_style div.deta {
+  margin: 30px auto;
+}
+
+h4.style_tit {
+  font-family: 'Dosis', Meiryo;
+  font-size: 1.3em;
+  color:rgba(49, 49, 49, 1);
+  border-bottom: 2px ridge #ececec;
+}
+
+
 
 /*Access*/
 
@@ -4116,14 +4152,15 @@ div.btn_reserve a {
   color: #fff;
   position: relative;
   left: 5px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   letter-spacing: 1px;
   top:-6px;
 }
 
 span.next {
   position: relative;
-  top:4px;
+  top:13px;
+  left: -62px;
 }
 
 section.mr_und {
@@ -4145,12 +4182,12 @@ section.mr_und {
 
 @media only screen and (max-width: 768px) {
 
-  div.reserve {
+  a.reserve {
   display: inherit;
   border: 2px solid #202020;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', Meiryo;
   color: #606060;
   width: 100px;
   height: 46px;
@@ -4158,10 +4195,16 @@ section.mr_und {
   padding: 2%;
 }
 
-
-
   h1.site-logo {
     margin-top: 40px;
+    float: left;
+  }
+
+  h1.site-logo span {
+      color: rgba(1, 1, 1, 1);
+      font-family: "Dosis",sans-serif;
+      font-size: 2.4rem;
+      font-weight: bold;
   }
 
   ul.snslogo {
@@ -4233,6 +4276,19 @@ section.mr_und {
     opacity: 0.8;
   }
 
+  div.waku_style {
+    background:none;
+    margin-bottom: 25px;
+    height: 396px;
+  }
+
+  div.waku_style img {
+    margin-top: 12px;
+    position: relative;
+    right: 2.5px;
+    bottom: 0.7px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -4297,10 +4353,48 @@ section.mr_und {
     opacity: 0.8;
   }
 
+  div.waku_style {
+    background:url("assets/img/waku_style.png")no-repeat;
+    margin-bottom: 25px;
+    height: 396px;
+  }
+
+  div.waku_style img {
+    margin-top: 12px;
+    position: relative;
+    right: 2.5px;
+    bottom: 0.7px;
+  }
+
 }
 
 
 @media only screen and (max-width: 460px) {
+
+  a.reserve {
+  display: inherit;
+  border: 2px solid #202020;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Dosis', Meiryo;
+  color: #606060;
+  width: 100px;
+  height: 46px;
+  margin: 0 auto;
+  padding: 4%;
+}
+
+  h1.site-logo {
+  margin-top: 40px;
+  float: none;
+}
+
+  h1.site-logo span {
+    color: rgba(1, 1, 1, 1);
+    font-family: "Dosis",sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
   div.kodawari {
     position: static;
@@ -4321,7 +4415,7 @@ section.mr_und {
 
   div.all_staff{
     background : rgba(224, 224, 224, 1);
-    padding: 6%;
+    padding: 5%;
     position: relative;
     left: 60px;
     z-index: 100;
@@ -4336,7 +4430,7 @@ section.mr_und {
 
   .info_recruit {
     background : rgba(224, 224, 224, 1);
-    padding: 7%;
+    padding: 6%;
     position: relative;
     left: 110px;
     z-index: 100;
@@ -4389,6 +4483,20 @@ section.mr_und {
     width: 200px;
     margin-bottom: 30px;
     opacity: 0.8;
+  }
+
+  div.waku_style {
+    background:url("assets/img/waku_style.png")no-repeat;
+    margin-bottom: 25px;
+    height: 396px;
+    width: 100%;
+  }
+
+  div.waku_style img {
+    margin-top: 12px;
+    position: relative;
+    right: 2.5px;
+    bottom: 0.7px;
   }
 
 }
