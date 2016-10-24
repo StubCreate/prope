@@ -2993,7 +2993,6 @@ li.comment {
   box-shadow: 0 1px 0 #e0e0e0;
   font-size: 0.9em;
   padding: 5px 0;
-  color: rgba(37, 67, 125, 1);
   font-weight: bold;
   font-family: 'Dosis', Meiryo;
   letter-spacing: 1.5px;
@@ -3234,9 +3233,7 @@ ul.postList li {
 
 .front-sp .circle {
   text-align: center;
-  position: relative;
-  left: -20px;
-  top: -20px;
+
 }
 .front-sp .circle img {
   border-radius: 50%;
@@ -3244,9 +3241,97 @@ ul.postList li {
   -moz-border-radius: 50%;
 }
 
+div.top_human {
+    background-color: #fff;
+    background-position: center;
+    height: 430px;
+}
+
+
+div.human_list dl {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    float: left;
+    height: 430px;
+    position: relative;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out 0s;
+    width: 19.5%;
+}
+
+span.btn_next {
+  position: relative;
+  right:30px;
+}
+
+dl.txt_human {
+  color: rgba(49, 49, 49, 1);
+  font-family: "Dosis",Meiryo;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 5%;
+  text-align: center;
+}
+
+ul.hasami {
+  margin-top: 60px;
+
+}
+
+ul.hasami li {
+  color: rgba(49, 49, 49, 1);
+  list-style: none;
+  font-family: "Dosis",Meiryo;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5%;
+  text-align: center;
+
+}
+
+/*.human_list dl:nth-child(n) {
+  background:url("assets/img/philosophy02.jpg") no-repeat;
+}*/
+
+.human_list dl:nth-child(n) {
+  width: 274px;
+  height: 440px;
+  background:url("assets/img/staff_onmouse.jpg") no-repeat;
+  cursor: pointer;
+}
+
+.human_list dl:nth-child(2n) {
+  background : rgba(231, 231, 231, 1);
+  width: 320px;
+  height: 240px;
+  position: relative;
+  top:80px;
+  left: 90px;
+  z-index: 100;
+}
+
+.human_list dl:nth-child(3n) {
+  width: 274px;
+  height: 440px;
+  background:url("assets/img/staff_onmouse.jpg") no-repeat;
+  cursor: pointer;
+}
+
+.human_list dl dt {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    bottom: 400px;
+    left: 20px;
+    font-family: 'Dosis', Meiryo;
+}
+
 .area_pick {
-  background-color: rgba(241, 241, 241, 1);
-  width: 100%;
+  background:url("assets/img/background_style.jpg") repeat-y;
+  background-size: contain;
   padding: 10px 0;
   margin: 30px 0;
 }
@@ -3258,13 +3343,11 @@ ul.postList li {
 }
 
 h1.entry-title {
-  color: #003f8e;
+  color: rgba(49, 49, 49, 1);
   font-weight: bold;
   padding: 5px 0px;
   font-family: 'Dosis', Meiryo;
-  letter-spacing: 1px;
-  font-size: 1.7em;
-
+  font-size: 2em;
 }
 
 .entry-content h2 {
@@ -3274,7 +3357,6 @@ h1.entry-title {
 }
 
 .entry-content h3 {
-  border-bottom: 1px dashed #003f8e;
   padding-bottom: 10px 0 5px 0;
 }
 
@@ -3371,7 +3453,7 @@ ul#page_link_menu {
 }
 
 .staff h1 {
-  color: #003f8e;
+  color: rgba(49, 49, 49, 1);
   font-weight: bold;
   padding: 5px 0px;
   font-family: 'Dosis', Meiryo;
@@ -3557,6 +3639,25 @@ ul#page_link_menu li a {
 }
 
 /*サブミットボタン*/
+.wpcf7-confirm {
+  text-align: center;
+  width: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #848483;
+  padding: 15px 20px;
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #dadada);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dadada));
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #848483;
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
+  text-shadow: 1px 1px 1px white, 0px 0px 0px rgba(255, 255, 255, 0);
+}
+
 .wpcf7-submit {
   text-align: center;
   width: 100px;
@@ -3574,6 +3675,31 @@ ul#page_link_menu li a {
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
   text-shadow: 1px 1px 1px white, 0px 0px 0px rgba(255, 255, 255, 0);
+  margin-left: 10px;
+}
+
+.wpcf7-back {
+  text-align: center;
+  width: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #848483;
+  padding: 15px 20px;
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #dadada);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#dadada));
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #848483;
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(15, 15, 15, 0);
+  text-shadow: 1px 1px 1px white, 0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+/*郵便番号*/
+input[type="text"].wpcf7-text {
+    width: auto;
 }
 
 
@@ -3907,11 +4033,12 @@ h3.cata_tit {
 
 dl.list_news {
   padding: 0 10px;
+  line-height: 1.1;
 }
 
 dl.list_news dt {
-  padding: 30px 10px 0;
-  border-top: 1px solid #ccc;
+  padding: 40px 10px 5px;
+  border-top: 1px dotted #ccc;
   font-size: 0.7rem;
   color: rgba(49, 49, 49, 1);
   margin-bottom: 0;
@@ -3919,7 +4046,7 @@ dl.list_news dt {
 
 dd.detail {
   margin-bottom: 0px;
-  padding: 0 10px;
+  padding: 2px 10px;
 }
 
 span.new {
@@ -3944,70 +4071,31 @@ div.posi_nav {
   margin-bottom: 10px;
 }
 
-div.circle img.philosoy {
-  width: 60%;
+div.kodawari h3::before {
+    background: rgba(49, 49, 49, 1) none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 10px auto;
+    width: 50px;
 }
 
-span.read {
-  font-size: 1rem;
-  font-family: 'Dosis', Meiryo;
-  color: #606060;
-  line-height: 1.7;
-}
-
-div.kodawari {
-  position: relative;
-  top:40px;
-  right: 45px;
-}
-
-div.kodawari h1 {
+div.kodawari h3 {
   font-family: 'Dosis', Meiryo;
   color: rgba(49, 49, 49, 1);
   font-weight: bold;
   font-size: 2.5rem;
+  float: left;
+  padding: 5%;
   text-align: center;
 }
 
-div.kodawari h2 {
-  font-size: 1.2rem;
-  font-weight:500;
-}
-
-div.kodawari p {
-  font-weight:200;
-  text-align: right;
-}
-
-div.recruit {
+div.kodawari span {
+  color: rgba(49, 49, 49, 1);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
   position: relative;
-  top:100px;
-}
-
-div.all_staff{
-  background : rgba(224, 224, 224, 1);
-  padding: 5%;
-  position: relative;
-  left: 20px;
-  z-index: 100;
-  bottom:10px;
-  height: 80px;
-}
-
-
-.info_recruit {
-  background : rgba(224, 224, 224, 1);
-  padding: 7%;
-  position: relative;
-  right: -90px;
-  z-index: 100;
-  height: 90px;
-  bottom: -20px;
-}
-
-div.recruit img.bnr_recruit {
-  position: relative;
-  right: 20px;
 }
 
 div.area_und {
@@ -4079,19 +4167,6 @@ ul.style_detail li {
     font-size: 1em:
   }
 
-  /*hairstyle*/
-div.waku_style {
-  background:url("assets/img/waku_style.png")no-repeat;
-  height: 396px;
-}
-
-div.waku_style img {
-  margin-top: 12px;
-  position: relative;
-  right: 2.5px;
-  bottom: 0.7px;
-}
-
 div.pickup_style {
   display: flex;
 }
@@ -4106,8 +4181,6 @@ h4.style_tit {
   color:rgba(49, 49, 49, 1);
   border-bottom: 2px ridge #ececec;
 }
-
-
 
 /*Access*/
 
@@ -4167,6 +4240,23 @@ section.mr_und {
   margin-bottom: 40px;
 }
 
+/*Coupon*/
+div.btn_coupon {
+  background : rgba(49, 49, 49, 1);
+  padding: 2%;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.btn_coupon span.white {
+  color: #fff;
+  position: relative;
+  left: 2px;
+  font-family: 'Dosis', Meiryo;
+  letter-spacing: 1px;
+  top:-1px;
+}
 
 
 #map_container {
@@ -4232,32 +4322,60 @@ section.mr_und {
     margin: 48px 0;
   }
 
-  div.recruit {
-    position: relative;
-    top:100px;
-    left: -34px;
+  div.top_human {
+      background-color: #fff;
+      background-position: center;
+      height: 100%;
   }
 
-  .info_recruit {
-    background : rgba(224, 224, 224, 1);
-    padding: 7%;
-    position: relative;
-    right: -90px;
-    z-index: 100;
-    height: 90px;
-    bottom: -20px;
-    width: 180px;
+  div.human_list dl {
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      float: none;
+      height: 430px;
+      position: static;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out 0s;
+      width: 50%;
+      margin-left: 30%;
   }
 
-  div.all_staff{
-    background : rgba(224, 224, 224, 1);
+  div.kodawari h3 {
+    font-family: 'Dosis', Meiryo;
+    color: rgba(49, 49, 49, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+    float: none;
     padding: 5%;
-    position: relative;
-    left: 8px;
-    z-index: 100;
-    bottom:10px;
-    height: 80px;
+    text-align: center;
   }
+
+  div.kodawari span {
+    color: rgba(49, 49, 49, 1);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    position: static;
+  }
+
+  .human_list dl:nth-child(2n) {
+    background : rgba(231, 231, 231, 1);
+    width: 270px;
+    height: 140px;
+    position: static;
+    top:80px;
+    left: 90px;
+    z-index: 100;
+  }
+
+  ul.hasami {
+    margin-top: 0px;
+    padding-top: 10px;
+
+  }
+
 
   div.btn_reserve {
     background : rgba(49, 49, 49, 1);
@@ -4274,67 +4392,51 @@ section.mr_und {
     width: 200px;
     margin-bottom: 30px;
     opacity: 0.8;
-  }
-
-  div.waku_style {
-    background:none;
-    margin-bottom: 25px;
-    height: 396px;
-  }
-
-  div.waku_style img {
-    margin-top: 12px;
-    position: relative;
-    right: 2.5px;
-    bottom: 0.7px;
   }
 
 }
 
 @media only screen and (max-width: 600px) {
 
-  div.kodawari {
-    position: static;
+  div.top_human {
+      background-color: #fff;
+      background-position: center;
+      height: 100%;
   }
 
-  div.kodawari h2 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2rem;
-    font-weight:500;
+  div.human_list dl {
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      float: none;
+      height: 430px;
+      position: static;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out 0s;
+      width: 50%;
+      margin-left: 28%;
+  }
+
+  div.kodawari h3 {
+    font-family: 'Dosis', Meiryo;
+    color: rgba(49, 49, 49, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+    float: none;
+    padding: 5%;
     text-align: center;
   }
 
-  div.kodawari p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:200;
-    text-align: center;
-  }
-
-  div.all_staff{
-    background : rgba(224, 224, 224, 1);
-    padding: 3%;
-    position: relative;
-    left: 8px;
-    z-index: 100;
-    bottom:30px;
-    height: 80px;
-    width: 220px;
-  }
-
-  div.recruit {
+  div.kodawari span {
+    color: rgba(49, 49, 49, 1);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
     position: static;
   }
 
-  .info_recruit {
-    background : rgba(224, 224, 224, 1);
-    padding: 4%;
-    position: relative;
-    left: 360px;
-    z-index: 100;
-    height: 90px;
-    bottom: -20px;
-    width: 200px;
-  }
+
 
   div.btn_reserve {
     background : rgba(49, 49, 49, 1);
@@ -4351,19 +4453,6 @@ section.mr_und {
     width: 200px;
     margin-bottom: 30px;
     opacity: 0.8;
-  }
-
-  div.waku_style {
-    background:url("assets/img/waku_style.png")no-repeat;
-    margin-bottom: 25px;
-    height: 396px;
-  }
-
-  div.waku_style img {
-    margin-top: 12px;
-    position: relative;
-    right: 2.5px;
-    bottom: 0.7px;
   }
 
 }
@@ -4396,48 +4485,55 @@ section.mr_und {
     font-weight: bold;
 }
 
-  div.kodawari {
+  div.top_human {
+    background-color: #fff;
+    background-position: center;
+    height: 100%;
+}
+
+div.human_list dl {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    float: none;
+    height: 430px;
     position: static;
-  }
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out 0s;
+    width: 60%;
+    margin: 10px auto;
+}
 
-  div.kodawari h2 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2rem;
-    font-weight:500;
-    text-align: center;
-  }
+.human_list dl:nth-child(2n) {
+  background : rgba(231, 231, 231, 1);
+  width: 275px;
+  height: 140px;
+  position: static;
+  top:80px;
+  left: 90px;
+  z-index: 100;
+}
 
-  div.kodawari p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight:200;
-    text-align: center;
-  }
-
-  div.all_staff{
-    background : rgba(224, 224, 224, 1);
+  div.kodawari h3 {
+    font-family: 'Dosis', Meiryo;
+    color: rgba(49, 49, 49, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+    float: none;
     padding: 5%;
-    position: relative;
-    left: 60px;
-    z-index: 100;
-    bottom:10px;
-    height: 80px;
-    width: 220px;
-  }
+    text-align: center;
+}
 
-  div.recruit {
+  div.kodawari span {
+    color: rgba(49, 49, 49, 1);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
     position: static;
-  }
+}
 
-  .info_recruit {
-    background : rgba(224, 224, 224, 1);
-    padding: 6%;
-    position: relative;
-    left: 110px;
-    z-index: 100;
-    height: 90px;
-    bottom: -20px;
-    width: 190px;
-  }
+
 
   /*Access*/
   table.access {
@@ -4485,19 +4581,33 @@ section.mr_und {
     opacity: 0.8;
   }
 
-  div.waku_style {
-    background:url("assets/img/waku_style.png")no-repeat;
-    margin-bottom: 25px;
-    height: 396px;
-    width: 100%;
-  }
+}
 
-  div.waku_style img {
-    margin-top: 12px;
-    position: relative;
-    right: 2.5px;
-    bottom: 0.7px;
-  }
+@media only screen and (max-width: 375px) {
+
+  /*div.human_list dl {
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      float: none;
+      height: 430px;
+      position: static;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out 0s;
+      width: 60%;
+      margin: 10px auto;
+  }*/
+
+
+.human_list dl:nth-child(2n) {
+  background : rgba(231, 231, 231, 1);
+  width: 200px;
+  height: 140px;
+  position: static;
+  z-index: 100;
+  margin: 20px auto;
+}
 
 }
 
@@ -4509,4 +4619,5 @@ section.mr_und {
 span.contact {
   color: #e95464;
   margin-top: 5px;
+  font-weight: bold;
 }

@@ -23,10 +23,8 @@ get_header(); ?>
 		if( $days > $news ){ print '<span class="new">New!</span>'; }
 ?>
 		<dt> <?php the_time('Y年n月j日'); ?></dt>
-		<dd class="detail"> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
-		<?php the_excerpt(); ?>
-
-		</dd>
+		 <dd class="detail"> <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></dd>
+		<dd class="detail"><?php the_excerpt(); ?></dd>
 		<?php
 		  endforeach;
 		  wp_reset_postdata();
@@ -42,9 +40,10 @@ get_header(); ?>
 </div>
 
 <div class="front-news">
+
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="field_tit">PICK&nbsp;UP</h3>
+			<h3 class="field_tit">HAIR&nbsp;STYLE</h3>
 			<div class="row newstyle">
 				<?php query_posts("cat=20&showposts=4"); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -82,32 +81,33 @@ get_header(); ?>
 		</div>
 	</div> <!-- /row -->
 </div> <!-- /front-news -->
+<div class="top_human kodawari">
 
-<div class="front-sp">
-	<div class="row">
-		<div class="large-5 small-12 columns">
-			<div class="large-12 small-12 columns circle">
-				<a href="<?php bloginfo('url'); ?>/?post_type=staff"><img class="philosoy" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy.jpg" alt="プロペラヘアーのコンセプト" /></a>
-				<div class="large-8 small-8 columns all_staff">
-         <span class="read">PROPELLER&nbsp;HAIR'S<br>STAFF&nbsp;PAGE</span>
-				</div>
-			</div>
-		</div>
-		<div class="large-3 small-12 columns kodawari">
-			<h1>Our&nbsp;Minds</h1>
-			<h2>自分的ヘアスタイル</h2>
-			<p>&nbsp;&nbsp;=&nbsp;ジブン的こだわり</p>
-		</div>
-		<div class="large-4 small-12 columns recruit">
-			<div class="large-8 small-8 columns info_recruit">
-				<span class="read">GO&nbsp;TO!<br>RECRUITMENT&nbsp;SITE！</span>
-			</div>
-				<div class="large-12 small-12 columns">
-			<a href="#"><img class="bnr_recruit" src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit.jpg" alt="リクルートサイトへ"></a>
-	</div>
+	<h3>Our&nbsp;Minds<br>
+		<span>自分的ヘアスタイル</span><br>
+		<span>ジブン的こだわり</span>
+	</h3>
+
+<div class="human_list">
+<dl><a href="<?php bloginfo('url'); ?>/?post_type=staff"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophy02.jpg" alt="スタッフ"></a>
+ <dt>All&nbsp;Staff</dt>
+ <dd></dd>
+</dl>
+<dl>
+ <dd>
+	<ul class="hasami">
+		<li>ハサミ一つで</li>
+	 <li>自分の夢を叶える</li>
+　　 </ul>
+		<a href=“#”></a>
+ </dd>
+</dl>
+<dl><a href="http://propeller-hair.sakura.ne.jp/wp/wp-content/uploads/2016/10/300c19fc681a7a77ae8993ad7f348966.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit02.jpg" alt="リクルート要項"></a>
+ <dt>Ricruit</dt>
+ <dd></dd>
+</dl>
 </div>
 </div>
-
 <div class="area_pick">
 	<div class="row front-feature">
 		<center>
@@ -137,24 +137,30 @@ get_header(); ?>
 </div>
 
 
-	<div class="row">
+	<div class="row area_und">
 		<div class="large-6 columns">
 		<center>
 		<h3 class="cata_tit">HAIR&nbsp;CATALOG</h3></center>
 		<div class="slider2">
-		<div><a href="<?php bloginfo('url'); ?>/haircatalog/サイド短めのショートヘアー"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata01.jpg" alt="ヘアーカタログ01" /></a></div>
-		<div><a href="<?php bloginfo('url'); ?>/haircatalog/まっすぐ揃ったバングが印象的"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata02.jpg" alt="ヘアーカタログ02" /></a></div>
-		<div><a href="<?php bloginfo('url'); ?>/haircatalog/女性らしく、活動的に"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata03.jpg" alt="ヘアーカタログ03" /></a></div>
-		<div><a href="<?php bloginfo('url'); ?>/haircatalog/軽めのパーマ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata04.jpg" alt="ヘアーカタログ04" /></a></div>
-		<div><a href="<?php bloginfo('url'); ?>/haircatalog/黒髪のスタイリッシュアレンジ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata05.jpg" alt="ヘアーカタログ05" /></a></div>
+		  <div><a href="<?php bloginfo('url'); ?>/haircatalog/サイド短めのショートヘアー"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata01.jpg" alt="ヘアーカタログ01" /></a></div>
+		  <div><a href="<?php bloginfo('url'); ?>/haircatalog/まっすぐ揃ったバングが印象的"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata02.jpg" alt="ヘアーカタログ02" /></a></div>
+		  <div><a href="<?php bloginfo('url'); ?>/haircatalog/女性らしく、活動的に"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata03.jpg" alt="ヘアーカタログ03" /></a></div>
+		  <div><a href="<?php bloginfo('url'); ?>/haircatalog/軽めのパーマ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata04.jpg" alt="ヘアーカタログ04" /></a></div>
+		  <div><a href="<?php bloginfo('url'); ?>/haircatalog/黒髪のスタイリッシュアレンジ"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide_cata05.jpg" alt="ヘアーカタログ05" /></a></div>
 		</div>
+		<div class="area_seecata">
+		  <span class="genericon genericon-next gene next">&nbsp;&nbsp;&nbsp;</span><a href="<?php bloginfo('url'); ?>/?post_type=haircatalog"><p class="cata_see">VIEW&nbsp;All</p></a>
+	</div>
 </div>
 <div class="large-6 columns">
-	<center>
-<div class="fb-page" data-href="https://www.facebook.com/PROPELLERHAIR" data-tabs="timeline" data-width="400" data-height="260" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PROPELLERHAIR" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PROPELLERHAIR">プロペラヘアー</a></blockquote></div>
+<center>
+	<h3 class="social_tit">FACE&nbsp;BOOK</h3>
+</center>
+<center>
+<div class="fb-page" data-href="https://www.facebook.com/PROPELLERHAIR" data-tabs="timeline" data-width="400" data-height="260" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+	<blockquote cite="https://www.facebook.com/PROPELLERHAIR" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PROPELLERHAIR">プロペラヘアー</a></blockquote></div>
 </center>
 </div>
-
 </div>
 
 

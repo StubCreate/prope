@@ -153,9 +153,15 @@ $('.slider1').slick({
 	    });
 	  </script>
 
-
-
-
+<script type="text/javascript">
+$(function () {
+	$(".human_list dl:nth-child(n)").hover(function (){
+		$("img", this).stop().animate({opacity:0},"fast");
+	},function () {
+		$("img", this).stop().animate({opacity:1},"fast");
+	});
+});
+</script>
 
 <script>
 var ua = navigator.userAgent.toLowerCase();
@@ -166,5 +172,7 @@ e.preventDefault();
 });
 }
 </script>
+
+
 </body>
 </html>
